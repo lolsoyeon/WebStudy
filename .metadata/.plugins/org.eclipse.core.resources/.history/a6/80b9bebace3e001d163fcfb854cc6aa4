@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test004.html</title>
+</head>
+<body>
+
+<div>
+	<h1>id를 선택자로 활용</h1>
+	<hr>
+</div>
+
+<div>id 선택자를 활용하는 실습이다.</div>
+<p>id를 선택자로 활용할 경우 id 앞에 우물정(#) 표시를 해야한다.</p>
+<p>id는 class와 유사하게 활용되지만, 페이지 내에서 유일하게 구성해야한다.</p>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test015.html</title>
+</head>
+<body>
+
+<div>
+	<h1>CSS 기타</h1>
+	<hr>
+</div>
+
+<div>
+	<h2>글자를 이렇게 만드는 속성이네...</h2>
+	<p></p>
+</div>
+</body>
+</html>

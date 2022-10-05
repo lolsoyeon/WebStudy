@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test017.html</title>
+
+<style type="text/css">
+	input {font-family: 나눔고딕코딩; font-weight: bold;}
+	input:focus {background-color: #eeeedd;}
+	.btn {width: 150px;}
+	.txt {text-align: right;}
+	.btn {width: 150px;}
+	textarea { font-family: 나눔고딕코딩; font-weight: bold;}
+</style>
+
+<script type="text/javascript">
+
+	function myCalc()
+	{	
+		// 확인
+		// alert("함수 호출 확인~!!");
+		document.getElementById("result").value = "";
+		
+		var numStr = document.getElementById("num").value;
+		var nNum = Number(numStr);
+		// 누적합
+		var nSum = 0;
+		
+		if (nNum < 100)
+		{
+			alert("입력값은 100 이상만 가능합니다.");
+			return;
+		}
+		
+		for (var n=1; n<=nNum; n++)
+		{
+			nSum += n;
+			
+			if (n%10==0)	// 반복문을 수행하며 1만큼씩증가할 n이 10의 배수
+			{
+				ducument.getElementById("result").value += "1 ~ " + n + " : " + nSum + "\n";
+			}
+		}
+		
+// 		document.getElementById("result").value += "1 ~ " + nNum + " : " + nSum + "\n";
+		document.getElementById("result").value += "1 ~ " + nNum + " : " + nSum + "\n";
+	}
+	
+</script>
+
+
+</head>
+<body>
+
+<div>
+	<h1>자바스크립트 활용</h1>
+	<hr>
+</div>
+
+<!-- 
+	1부터 n까지의 합을 계산하되
+	n은 100 이상만 허용하고
+	출력시 10 의 배수가 될 때마다
+	중간 합을 출력할 수 있는 페이지를 구성한다.
+	
+	반복문을 활용할 수 있도록 한다.
+	
+	HTML, CSS, Javascript 활용
+	
+	페이지 레이아웃
+	--------------------------------------
+	
+	정수 입력(100 이상)		[   100이상    ]  → 조건 유효성
+	
+	<결과> <취소>
+	
+	┌───────────┐
+	│ 1 ~ 10 : 55           │	→ textarea
+	│ 1 ~ 20 : 210          │
+	│ 	  :                  │
+	│ 1 ~ 100: 5050         │
+	│                       │
+	└───────────┘
+	-------------------------------------
+
+
+ -->
+ 
+<div>
+	<form>
+	
+		<div>
+			 정수 입력 (100 이상)
+			 <input type="text" id="num" class="txt">
+		</div>
+		<br>
+		
+		<div>
+			 <input type="button" value="결과" class="btn" onclick="myCalc()">
+			 <input type="reset" value="취소" class="btn">
+		</div>
+		<br>
+		
+		<div>
+			<textarea rows="10" cols="43" id="result" readonly="readonly"></textarea>
+		</div>
+	</form>
+</div>
+
+
+</body>
+</html>

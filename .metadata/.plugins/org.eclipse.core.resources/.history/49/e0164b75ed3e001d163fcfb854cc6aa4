@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test018.html</title>
+</head>
+<body>
+
+<div>
+	<h1>CSS를 활용한 대소문자 지정 실습</h1>
+	<hr>
+</div>
+
+<div>
+	<span>Flower make our rooms cheerful.</span>
+	<br><br>
+	
+	<span>Flower make our rooms cheerful.</span>
+	<br><br>
+	
+	<span>Flower make our rooms cheerful.</span>
+	<br><br>
+	
+	<span>Flower make our rooms cheerful.</span>
+	<br><br>
+</div>
+
+</body>
+</html>

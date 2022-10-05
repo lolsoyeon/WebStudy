@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test012.html</title>
+
+<script type="text/javascript">
+
+	function buttonOnclick1()
+	{
+		alert("첫 번재 버튼 클릭");
+	}
+	
+	function buttonOnclick2()
+	{
+		alert("두 번째 버튼 클릭");
+	}
+
+</script>
+
+</head>
+<body>
+
+<input type = "button" id="button1" value="Button" onclick="buttonOnclick1()"><br>
+<input type = "button" id="button2" value="Button" onclick="buttonOnclick2()"><br>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+h2
+{
+	color: blue;
+}
+
+p
+{
+	font-size: 20pt;
+	font-weight: boid;
+	color: red;
+}
+
+
+
+

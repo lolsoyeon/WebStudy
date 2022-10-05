@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test024_2.html</title>
+
+<style type="text/css">
+input {
+	font-family: 나눔고딕코딩;
+	font-weight: bold;
+}
+
+input:focus {
+	background-color: #eeeedd;
+}
+
+input.btn {
+	font-weight: bold;
+	font-family: 맑은 고딕;
+}
+
+.txt {
+	text-align: right;
+}
+
+.btn {
+	width: 150px;
+	font-weight: bold;
+}
+
+.btn:hover {
+	color: orange;
+}
+
+table {
+	border: "1";
+	font-weight: bold;
+}
+
+td {
+	background-color: #ccc;
+	text-align: center;
+}
+
+tr {
+	border: "1";
+}
+
+th {
+	width: 30px;
+}
+
+textarea {
+	font-family: 나눔고딕코딩;
+	font-weight: bold;
+}
+
+.txt {
+	text-align: center;
+	width: 70px;
+}
+</style>
+
+<script type="text/javascript">
+
+
+
+	function actionCalendar()
+	{
+	   //alert("함수 호출 확인");
+	   
+	   // 입력한 년, 월 가져오는 부분
+	   var year = Number(document.getElementById("txtYear").value);
+	   var month = Number(document.getElementById("txtMonth").value);
+	   
+	   //alert(year + "-" + month);
+	   //alert(year + month);
+	   
+	   /* 
+	   if(year < 0)
+	   {
+	      alert("입력 년도 이상~!!!");
+	      return;
+	   }
+	   
+	   if(month < 0 || month > 12)
+	   {
+	      alert("입력 월 이상~!!!");
+	      return;
+	   }
+	   */
+	   
+	   if (year<1 || month<1 || month>12)
+	   {
+	      alert("입력한 년 또는 월이 유효하지 않음~!!!");
+	      return;
+	   }
+	   
+	   // 1단계. 1년 1월 1일 부터... 
+	   //        입력한 년도의 전년도 12월 31일 까지의 총 날짜 수 구함.
+	   
+	   // Math.floor() → 소수부 절삭   → parseInt()
+	   // Math.ceil()  → 소수부 올림
+	   // Math.round() → 소수부 반올림
+	   
+	   var total = 0;
+	   total = (year-1)*365 + parseInt((year-1)/4) - parseInt((year-1)/100) + parseInt((year-1)/400);
+	   
+	   // 확인
+	   //alert("1년 1월 1일 ~ " + (year-1) + "년 12월 31일 : " + total);
+	   //--==>> 1년 1월 1일 ~ 2018년 12월 31일 : 737059
+	   
+	   // 2단계. 해당년 1월 1일 부터...
+	   //        해당년 해당월 1일 까지의 총 날짜 수 구함.
+	   var m = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+	   
+	   //alert(m.length);
+	   
+	   for (var i=0; i<month-1; i++)
+	   {
+	      total += m[i];
+	   }
+	   total++;
+	   
+	   if(month>=3 && (year%4==0 && year%100!=0 || year%400==0))
+	   {
+	      total++;
+	   }
+	   
+	   // 3단계. 해당년 해당월의 첫 날(1일)의 요일 구함.
+	   var days = total % 7;
+	   
+	   // 확인
+	   //alert(days);   //-- 2 (2019년 10월 기준) → 화
+	   
+	   // 4단계. 해당년 해당월의 마지막 날짜 구함 
+	   var lastDay = m[month-1];
+	   
+	   if (month==2 && (year%4==0 && year%100!=0 || year%400==0))
+	   {
+	      lastDay = 29;
+	   }
+	   
+	   // 확인
+	   //alert(lastDay);
+	   
+	   
+      var tableNode = document.getElementById("calendarTbl");
+      
+      var trNode = document.createElement("tr");   // <tr></tr>
+      
+      // 해당 월의 1일이 시작되기 전의 빈 칸 td 채우는 부분
+      for (var i=0; i<days; i++)
+      {
+         trNode.appendChild(createTdNode(""));      
+      }
+      
+      // 1일 부터... 해당 월의 마지막 날짜까지 td 채우는 부분
+      var d=1;
+      for (d=1; d<=lastDay; d++)
+      {
+         trNode.appendChild(createTdNode(d));
+      }
+      
+      tableNode.appendChild(trNode);
+   
+	   
+
+</script>
+
+
+
+</head>
+<body>
+
+	<!-- 
+ 	만년달력 페이지를 구성한다.
+ 	테이블의 동적 생성 구문을 활용한다.
+ 	
+ 	1단계. 1년 1월 1일부터 전년도 12월 31일 까지의 총 날짜수 구함
+ 	2단계. 해당년 1월 1일부터 해달년 해당월 1일 까지의 총 날짜수 구함
+ 	3단계. 해당년 해당월의 첫날의 요일을 구함
+ 	4단계. 해당년 해당월의 마지막 날짜를 구함
+ 	5단계. 해당년 해당월 기준 달력 구성  
+ -->
+
+
+
+	<div>
+		<h1>테이블 동적 생성으로 만년달력 그리기</h1>
+		<hr>
+	</div>
+
+	<div>
+		<form>
+			<input type="text" id="txtYear" class="txt"> 년 <input
+				type="text" id="txtMonth" class="txt"> 월 <br> <br>
+
+			<button type="button" class="btn" onclick="actionCalendar1()">만년달력
+				그리기</button>
+			<br> <br>
+
+			<table border="1" id="calenderTbl">
+				<tr>
+					<th>일</th>
+					<th>월</th>
+					<th>화</th>
+					<th>수</th>
+					<th>목</th>
+					<th>금</th>
+					<th>토</th>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test024.html</title>
+
+<style type="text/css">
+	input {font-family: 나눔고딕코딩; font-weight: bold;}
+	input:focus {background-color: #eeeedd;}
+	input.btn {font-weight: bold; font-family: 맑은 고딕;}
+	.txt {text-align: right;}
+	.btn {width: 150px; font-weight: bold;}
+	.btn:hover {color: orange;}
+	table {border: "1"; font-weight: bold;}
+	td {background-color: #ccc; text-align: center;}
+	tr {border: "1";}
+	th {width: 30px; }
+	textarea { font-family: 나눔고딕코딩; font-weight: bold;}
+	.txt {text-align: center; width: 70px;}
+</style>
+
+<script type="text/javascript">
+	function myCalender() 
+	{
+// 		alert("함수 호출확인~!");
+		
+		var year = document.getElementById("txtYear").value;
+		var month = document.getElementById("txtMonth").value;
+		
+// 		alert(year + " - " + month);
+
+	
+
+	}
+
+
+</script>
+
+
+
+
+
+</head>
+<body>
+
+<!-- 
+ 	만년달력 페이지를 구성한다.
+ 	테이블의 동적 생성 구문을 활용한다.
+ 	
+ 	1단계. 1년 1월 1일부터 전년도 12월 31일 까지의 총 날짜수 구함
+ 	2단계. 해당년 1월 1일부터 해달년 해당월 1일 까지의 총 날짜수 구함
+ 	3단계. 해당년 해당월의 첫날의 요일을 구함
+ 	4단계. 해당년 해당월의 마지막 날짜를 구함
+ 	5단계. 해당년 해당월 기준 달력 구성  
+ -->
+
+
+
+<div>
+	<h1>테이블 동적 생성으로 만년달력 그리기</h1>
+	<hr>
+</div>
+
+<div>
+	<form>
+		<input type="text" id="txtYear" class="txt" > 년
+		<input type="text" id="txtMonth" class="txt"> 월
+		<br><br>
+		
+		<button type="button" class="btn" onclick="myCalender()">만년달력 그리기</button>
+		<br><br>
+		
+		<table border="1" id="calenderTbl">
+			<tr>
+				<th>일</th>
+				<th>월</th>
+				<th>화</th>
+				<th>수</th>
+				<th>목</th>
+				<th>금</th>
+				<th>토</th>
+			</tr>
+		</table>
+	</form>
+</div>
+
+</body>
+</html>

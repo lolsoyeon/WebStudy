@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test013.html</title>
+
+<style type="text/css">
+	input.box:focus {background-color: yellow;}
+	.btn:hover {background-color: #666; color: orange; font-weight: bold; }
+</style>
+
+<script type="text/javascript">
+
+	function btnA_click()
+	{
+		// 확인
+// 		alert("A버튼 클릭~!!!");
+		
+		// 테스트
+		alert(document.getElementById("txtLeft"));
+	}
+	function btnB_click()
+	{
+		// 확인
+// 		alert("B버튼 클릭~!!");
+		
+	}
+
+</script>
+
+</head>
+<body>
+
+<div>
+	<h1>자바스크립트 이벤트 처리 실습</h1>
+	<hr>
+</div>
+
+<div>
+	<hr>
+	<input type="text" class="box" id="txtLeft">
+	<input type="button" class="btn" id="btnA" value="A버튼" onclick="btnA_click()">
+	<input type="button" class="btn" id="btnB" value="B버튼" onclick="btnB_click()">
+	<input type="text" class="box" id="txtRight">
+	<hr>
+</div>
+
+
+</body>
+</html>

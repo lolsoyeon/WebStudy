@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test017_1.html</title>
+
+<style type="text/css">
+	.btn {width: 110px;}
+
+</style>
+
+<script type="text/javascript">
+
+	function mySum()
+	{
+		// 테스트
+		// alert("함수호출~!!!");
+		
+		var vInput = document.getElementById("input").value;
+		
+		if (vInput<100)
+		{
+			alert("100 이상의 정수를 입력 해주세요~!!!");
+		}
+		
+		var vResult = 0;
+		var i = 0;
+		
+		
+		for (var i = 0; i <= vInput; i++)
+		{
+			vResult += i;
+			
+// 			var j = 1;
+				if (i%10 == 0)
+				{
+					document.getElementById("result").value += "1 ~ " + i+ ": " + vResult +"\n"; 
+				}
+		}
+		
+		document.getElementById("result").value += "1 ~ "+ (i-1)+ ": "+ vResult+ "\n";
+		
+		
+	}
+
+</script>
+
+
+</head>
+<body>
+
+<div>
+	<h1>자바스크립트 활용</h1>
+	<hr>
+</div>
+
+<!-- 
+	1부터 n까지의 합을 계산하되
+	n은 100 이상만 허용하고
+	출력 시 10 의 배수가 될 때마다
+	중간 합을 출력할 수 있는 페이지를 구성한다.
+	
+	반복문을 활용할 수 있도록 한다.
+	
+	HTML, CSS, Javascript 활용
+	
+	페이지 레이아웃
+	--------------------------------------
+	
+	정수 입력(100 이상)		[   100이상    ]  → 조건 유효성 경고창
+	
+	  < 결과 > < 취소 >
+	
+	┌───────────┐
+	│ 1 ~ 10 : 55           │	→ textarea
+	│ 1 ~ 20 : 210          │
+	│ 	  :                  │
+	│ 1 ~ 100: 5050         │
+	│                       │
+	└───────────┘
+	-------------------------------------
+ -->
+<table>
+	<from>
+		<tr>
+			<td>정수 입력(100 이상) 
+				<input type="text" class="textbox" id="input"><br>
+				<input type="button" class="btn" id="click" value="결과" onclick="mySum()">
+				<input type="reset" class="btn" id="click" value="취소">
+			</td>
+			
+		</tr>
+		<tr>
+			<td>
+				<textarea name="output" rows="50" cols="50" id="result" isabled="disabled"></textarea>
+			</td>
+		</tr>	
+	</from>
+</table>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

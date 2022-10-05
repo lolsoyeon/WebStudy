@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test010.html</title>
+
+<script type="text/javascript">
+
+	mesasage = "<h1>Hello~!!</h1>";
+	document.write(massage);
+	alert(massage);
+
+</script>
+
+</head>
+<body>
+
+
+
+</body>
+</html>

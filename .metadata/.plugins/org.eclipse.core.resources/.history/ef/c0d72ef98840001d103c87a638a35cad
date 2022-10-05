@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test021_1.html</title>
+
+<script type="text/javascript">
+
+	// 프롬프트가 호출되는 수를 담을 변수
+
+	function vClick()
+	{
+		
+		alert("함수야,,,,");
+		var n = 0;
+		var str = "";
+		var arr = new Array();
+		
+// 		var str = prompt("이름 전화번호를 입력해주세요.");
+		
+// 		document.getElementById("result").value += str + "\n";
+		
+// 		alert(str);
+		
+		do
+		{
+			str = prompt("이름 전화번호("+ (n+1) +")입력해주세요.");
+			
+			if (str=="" || str=="." str==" ")
+			{
+				break;
+			}
+			
+			arr[n] = str;
+			n++;
+			
+		} while (true);
+		// arr.length;
+		document.getElementById("inwon").value = arr.length;
+		document.getElementById("result").value = "   이름     전화번호 ";
+		document.getElementById("result").value += "------------------------\n";
+		
+		
+		for (var n = 0; n < arr.length; n++)
+		{
+			document.getElementById("result").value += arr[n] + "\n";
+			
+		}
+		
+	}
+	
+	// 전체 회원수는 프롬프트가 나올때 마다 (클릭을 할 때마다 카운트 한다. +1씩)
+	
+</script>
+
+</head>
+<body>
+
+<div>
+	<h1>자바스크립트 활용</h1>
+	<hr>
+</div>
+
+<!-- 
+	사용자로부터 여러 명의 이름과 전화 번호를 입력 받고
+	그 내용을 전체 출력하는 페이지를 구현한다.
+	
+	HTML, CSS, Javascript 를 활용한다.
+	
+	※ prompt() 활용
+	
+	페이지 레이아웃
+	------------------------------------------------
+	< 회원 정보 입력 > → click → 프롬프트 대화창
+	
+	전체 회원 수 [   ] 명
+	----------------------
+		이름  전화번호
+	
+			:
+	---------------------- textarea
+	
+	
+	
+	------------------------------------------------
+ -->
+<div>
+	<form>
+	
+	<input type="button" value="회원 정보 입력" class="btn" onclick="vClick()">
+	
+<!-- 	<button type="button" onclick="vClick()">회원 정보 입력</button> -->
+	<br><br>
+	
+	전체 회원 수 
+	<input type="text" id="inwon" class="txt01" readonly="readonly">명<br>
+	-----------------------------<br>
+	<textarea rows="10" cols="50" id="result" class="txt02" readonly="readonly"></textarea>
+	 
+	</form>
+</div>
+
+</body>
+</html>

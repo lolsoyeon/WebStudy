@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test014.html</title>
+
+<style type="text/css">
+
+	* {color: #222222;}
+	input {font-family: 나눔고딕코딩; font-weight: bold;}
+	input:focus {background-color: #ccc;}
+	input.btn {width: 100px; font-family: 맑은 고딕;}
+	input.btn:hover {background-color: #888888; color: black;}
+	input.btn:active {color: #999999;}
+	.inputNum {width: 80px;}
+
+</style>
+
+<script type="text/javascript">
+
+function js_add()
+{
+	var txt01 = document.getElementById("num1").value;
+	var txt02 = document.getElementById("num2").value;
+	
+	var result = Number(txt01) + Number(txt02);
+	
+	document.getElementById("result").value = result;
+	
+}
+function js_minus()
+{
+	var txt01 = document.getElementById("num1").value;
+	var txt02 = document.getElementById("num2").value;
+	
+	var result = Number(txt01) - Number(txt02);
+	
+	document.getElementById("result").value = result;
+}
+function js_multiple()
+{
+	var txt01 = document.getElementById("num1").value;
+	var txt02 = document.getElementById("num2").value;
+	
+	var result = Number(txt01) * Number(txt02);
+	
+	document.getElementById("result").value = result;
+	
+}
+function js_skajwl()
+{
+	var txt01 = document.getElementById("num1").value;
+	var txt02 = document.getElementById("num2").value;
+	
+	var result = Number(txt01) / Number(txt02);
+	
+	document.getElementById("result").value = result;
+	
+}
+
+
+
+
+</script>
+
+</head>
+<body>
+
+<div>
+	<h1>자바 스크립트 활용</h1>
+	<hr>
+</div>
+
+<div>
+	<p>두개의 정수를 입력 받고</p>
+	<p>합, 차, 곱, 몫을 연산하여 연산 결과를 출력하는 페이지를 구성한다.</p>
+	<p>HTML, CSS, Javascript 를 활용하여 처리한다.</p>
+</div>
+
+<div>
+	<form>
+		정수1 <input type="text" id="num1" class="inputNum">
+		정수2 <input type="text" id="num2" class="inputNum">
+		<br><br>
+		
+		<input type="button" class="btn" value="더하기" onclick="js_add()">
+		<input type="button" class="btn" value="빼기" onclick="js_minus()">
+		<input type="button" class="btn" value="곱하기" onclick="js_multiple()">
+		<input type="button" class="btn" value="나누기" onclick="js_skajwl()">
+		<br><br>
+		
+		결과 <input type="text" id="result" class="inputNum" disabled="disabled">
+		<input type="reset" class="btn" value="취소">
+	</form>
+	
+
+</div>
+
+</body>
+</html>

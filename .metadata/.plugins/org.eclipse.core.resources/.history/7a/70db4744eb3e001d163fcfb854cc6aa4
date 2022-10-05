@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test015.html</title>
+
+<style type="text/css">
+	h2 {font-style: oblique;}
+	p {font-variant: small-caps;}
+	
+	
+</style>
+</head>
+<body>
+
+<div>
+	<h1>CSS 기타</h1>
+	<hr>
+</div>
+
+<div>
+	<h2>글자를 이렇게 만드는 속성이네...</h2>
+	<p>Investor appetite for risky assets still remained subdued as aggressive monetary 
+	tightening moves in major economies stoked concerns about a global recession.
+	Last week, the Fed raised its benchmark interest rates by three-quarters of a point,
+	its third increase in a row, to bring down inflation.
+	In Seoul, Samsung Electronics advanced 0.56 percent to 54,200 won,
+	and Hyundai Motor gained 1.92 percent to 186,000 won.</p>
+</div>
+</body>
+</html>

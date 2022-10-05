@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+	const fruits  = ["Apple" , "Banana","Orange"];
+	
+	for (x of fruits)
+	{
+		console.log(x);	
+	}
+
+
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

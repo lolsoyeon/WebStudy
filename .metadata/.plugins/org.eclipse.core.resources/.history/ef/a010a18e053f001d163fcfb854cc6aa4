@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test007.html</title>
+
+<script type="text/javascript">
+
+	document.write("<div><h1>증감연산자 확인</h1><hr></div>")
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
