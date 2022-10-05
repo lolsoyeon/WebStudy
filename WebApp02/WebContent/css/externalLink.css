@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/* 이와 같은 방식으로 처리되지않음 */
+/* 내가 이 스타일을 적용시킬 파일은 Test007.html 이야~!!! */
+
+h2
+{
+	color: blue;
+}
+
+p
+{
+	font-size: 20pt;
+	font-weight: boid;
+	color: red;
+}
+
+
