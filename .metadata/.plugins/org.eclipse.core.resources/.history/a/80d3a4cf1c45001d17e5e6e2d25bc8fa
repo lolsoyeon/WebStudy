@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test030.html</title>
+
+<style type="text/css">
+	input {font-family: 나눔고딕코딩; font-weight: bold;}
+	input:focus {background-color: #eeeedd;}
+	.btn {width: 150px;}
+	.txt {text-align: right;}
+	.btn {width: 230px; font-family: 맑은 고딕;}
+	textarea { font-family: 나눔고딕코딩; font-weight: bold;}
+	.txt {text-align: right;}
+	td {text-align: right; font-weight: bold;}
+	#btnAdd {width: 260px;}
+	seelct {width: 50px;}
+	
+</style>
+
+<script type="text/javascript">
+	
+	function selectTest()
+	{
+		alert("함수");
+	}
+
+
+</script>
+
+</head>
+<body>
+
+<div>
+	<h1>자바스크립트 활용</h1>
+	<p>선택 목록(select) 컨트롤</p>
+	<hr>
+</div>
+
+<div>
+	<form>
+		<table>
+			<tr>
+				<td>이름</td>
+				<td>
+					<input type="text" id="userName">
+				</td>
+			</tr>
+			
+			<tr>
+				<td>주민번호</td>
+				<td>
+					<input type="text" id="userSsn">
+				</td>
+			</tr>
+			
+			<tr>
+				<td>지역</td>
+				<td>
+<!-- 				<input type="text" id="userCity"> -->
+					<select id="userCity">
+						<option value="1123(서울)">서울</option>
+						<option value="2234(대전)">대전</option>
+						<option value="3345(광주)">광주</option>
+						<option value="4456(대구)">대구</option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>부서</td>
+				<td>
+<!-- 					<input type="text" id="userDept"> -->
+					<select id="userDept">
+						<option value="9987(개발부)">개발부</option>
+						<option value="9988(인사부)">인사부</option>
+						<option value="9989(자재부)">자재부</option>
+						<option value="9990(영업부)" selected="selected">영업부</option>
+						<option value="9991(총무부)">총무부</option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>직위</td>
+				<td>
+<!-- 					<input type="text" id="userPosition"> -->
+					<select id="userPosition">
+						<option value="qwer(부장)">부장</option>
+						<option value="asdf(과장)">과장</option>
+						<option value="zxcv(대리)">대리</option>
+						<option value="tyuu(사원)" selected="selected">사원</option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>기본급</td>
+				<td>
+					<input type="text" id="userBasicpay">
+				</td>
+			</tr>
+		</table>
+		<br>
+		
+		<input type="button" class="btn" id="btnAdd" value="직원 추가"
+		onclick="selectTest()">
+		<br><br>
+		
+		<table id="memberList">
+			<tr>
+				<td>이름</td>
+				<td>주민번호</td>
+				<td>지역</td>
+				<td>부서</td>
+				<td>직위</td>
+				<td>기본급</td>
+			</tr>
+		</table>
+	</form>
+</div>
+
+
+
+
+
+</body>
+</html>

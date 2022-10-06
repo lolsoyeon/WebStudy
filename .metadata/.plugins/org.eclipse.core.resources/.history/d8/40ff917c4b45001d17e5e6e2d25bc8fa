@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test034.html</title>
+</head>
+<body>
+
+<!-- 
+	■■■ 웹 기초 내용 정리 ■■■
+	
+	○ 웹 페이지 작성
+	
+		- 구조적 설계 (HTML)
+		 ∂ 컨텐츠에 대한 레이아웃 구성 (부모 자식 관계 설정) 
+		    어떤엘리먼트 밑에 누가있고 잘보이려고 들여쓰기랑 공백 으로 연습했다.
+		 ∂ ... 태그 공부(인라인 / 블럭)
+		 
+		 http://www.w3schools.com/
+		 http://koxo.com/
+		
+		
+		- 프리젠테이션 추가 (CSS)
+		
+		- 동작, 행동 및 기능 추가(Javascript)
+		
+		
+	
+	
+ -->
+
+</body>
+</html>

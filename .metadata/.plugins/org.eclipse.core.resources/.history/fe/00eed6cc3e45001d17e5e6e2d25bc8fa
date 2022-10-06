@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test032.html</title>
+</head>
+<body>
+
+
+<div>
+	<form>
+		주소 검색 <input> <input type="button" value="검색">
+		<br><br>
+	</form>
+</div>
+
+</body>
+</html>

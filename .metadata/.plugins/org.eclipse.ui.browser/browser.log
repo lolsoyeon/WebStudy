@@ -1,0 +1,21 @@
+
+10월 05, 2022 19:57:02.85 NEW SESSION
+10월 05, 2022 19:57:02.85 [12768:14012:1005/195702.849:ERROR:device_event_log_impl.cc(214)] [19:57:02.850] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 吏�� 뺣맂 �뙆�씪�쓣 李얠쓣 �닔 �뾾�뒿�땲�떎. (0x2)
+10월 05, 2022 19:57:02.85 [12768:14012:1005/195702.853:ERROR:device_event_log_impl.cc(214)] [19:57:02.853] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 05, 2022 19:57:02.86 [12768:14012:1005/195702.861:ERROR:device_event_log_impl.cc(214)] [19:57:02.861] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 05, 2022 19:57:02.86 [12768:14012:1005/195702.861:ERROR:device_event_log_impl.cc(214)] [19:57:02.861] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 05, 2022 19:57:02.86 [12768:14012:1005/195702.861:ERROR:device_event_log_impl.cc(214)] [19:57:02.861] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 05, 2022 19:58:00.81 [12768:13320:1005/195800.818:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 05, 2022 21:30:22.35 [12768:14012:1005/213022.353:ERROR:interface_endpoint_client.cc(689)] Message 0 rejected by interface blink.mojom.WidgetHost
+10월 05, 2022 22:44:54.86 [12768:14012:1005/224454.861:ERROR:device_event_log_impl.cc(214)] [22:44:54.860] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+10월 05, 2022 22:44:54.87 [12768:14012:1005/224454.878:ERROR:device_event_log_impl.cc(214)] [22:44:54.863] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: �궗�슜 媛��뒫�븳 �뜲�씠�꽣媛� �뾾�뒿�땲�떎. (0x103)
+10월 06, 2022 24:58:00.82 [12768:1768:1006/005800.829:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 06, 2022 05:58:00.84 [12768:11572:1006/055800.842:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 06, 2022 08:53:28.91 [12768:14012:1006/085328.913:ERROR:device_event_log_impl.cc(214)] [08:53:28.910] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+10월 06, 2022 10:58:00.85 [12768:8744:1006/105800.849:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 06, 2022 12:33:22.04 [12768:14012:1006/123322.042:ERROR:interface_endpoint_client.cc(689)] Message 5 rejected by interface blink.mojom.WidgetHost
+10월 06, 2022 14:35:23.12 [12768:14012:1006/143523.125:ERROR:interface_endpoint_client.cc(689)] Message 0 rejected by interface blink.mojom.WidgetHost
+10월 06, 2022 14:40:50.07 [12768:14012:1006/144050.078:ERROR:CONSOLE(1)] "Could not close stream.", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+10월 06, 2022 14:40:50.28 [12768:14012:1006/144050.287:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+10월 06, 2022 15:28:37.05 [12768:14012:1006/152837.055:ERROR:interface_endpoint_client.cc(689)] Message 1 rejected by interface blink.mojom.WidgetHost
+10월 06, 2022 15:58:00.86 [12768:14360:1006/155800.861:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater

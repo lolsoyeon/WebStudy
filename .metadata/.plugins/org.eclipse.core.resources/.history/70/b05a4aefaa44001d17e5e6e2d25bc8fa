@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test028_1.html</title>
+
+<style type="text/css">
+	input {font-family: 나눔고딕코딩; font-weight: bold;}
+	input:focus {background-color: #eeeedd;}
+	.btn {width: 150px;}
+	.txt {text-align: right;}
+	textarea { font-family: 나눔고딕코딩; font-weight: bold;}
+	.txt {text-align: center; width: 300px;}
+</style>
+
+<script type="text/javascript">
+
+	function actionChoice()
+	{
+// 		alert("함수 호출 확인~!!!");
+		var checkObj = document.getElementsByName("checkGroup");
+		
+// 		alert(checkObj);
+		// [object NodeList]  자바스크립트 배열이구나
+		
+// 		alert(checkObj.length);
+		//--==>> 6 개의 방이 준비됨
+		
+		
+		for (var i = 0; i < checkObj.length; i++)	// 0 1 2 3 4 5
+		{
+			alert(checkObj[i].checked);
+		}
+		
+	
+	
+	}
+
+
+</script>
+
+</head>
+<body>
+
+<div>
+	<h1>자바스크립트 활용</h1>
+	<p>라디오 버튼, 체크박스 컨트롤</p>
+</div>
+
+
+<div>
+	<form>
+		----- 과목 선택 -----
+		<br><br>
+<!-- 		자바 기초 -->
+		<label>
+			<input type="checkbox" name="checkGroup" value="자바 기초">Java Beginning
+		</label>
+		<br>
+		
+<!-- 		오라클 -->
+		<label>
+			<input type="checkbox" name="checkGroup" value="오라클">Oracle
+		</label>
+		<br>
+		
+<!-- 		자바심화 -->
+		<label>
+			<input type="checkbox" name="checkGroup" value="자바 심화">Java Advanced
+		</label>
+		<br>
+		
+<!-- 		웹클라이언트 -->
+		<label>
+			<input type="checkbox" name="checkGroup" value="웹클라이언트">Web Client
+			</label>
+		<br>
+		
+<!-- 		웹APP서버 -->
+		<label>
+			<input type="checkbox" name="checkGroup" value="웹App 서버">JSP / Servlet
+		</label>
+		<br>
+
+<!-- 		프레임워크 -->
+		<label>
+			<input type="checkbox" name="checkGroup" value="프레임워크">FrameWork
+		</label>
+		<br><br>
+
+		<button type="button" class="btn" onclick="actionChoice()">선택 완료</button>
+		
+		
+	</form>
+</div>
+
+</body>
+</html>

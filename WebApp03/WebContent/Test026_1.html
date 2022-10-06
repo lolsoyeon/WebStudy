@@ -35,22 +35,19 @@
 		// 정수형태로 보관
 		var su = parseInt(inStr);
 		
-		// 
 		
 		// 6번의 난수 발생을 시킨다. 로또 번호를 담을 배열 생성
 		var game = new Array(6);
 		
 
-		for (var i = 0; i < su; i++)
+		for (var i = 0; i < su; i++)	// 입력받은 수 만큼 게임 반복
 		{
 			
-			for (var i = 0; i 	
+			for (var i = 0; i < game.length; i++)		// 6개의 난수 발생
 			{
 				// 1 ~ 45 까지의 난수를 game 배열에 담기
 				game[i] = parseInt(Math.random()*45)+1;
 				
-				< 6; i++)
-	
 				
 					for (var j = 0; j < game.length; j++)		// 중복 검사
 					{
@@ -67,7 +64,7 @@
 			}
 			// 테스트 
 			game.sort(function(a,b)
-			{		return a - b;
+			{		return Number(a) - Number(b);
 			
 			});
 			
