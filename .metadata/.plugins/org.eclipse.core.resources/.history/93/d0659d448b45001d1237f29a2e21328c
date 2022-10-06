@@ -53,7 +53,7 @@ td {
 	{
 		// 		alert("함수 호출 ~!");
 
-		// 첫 번째 방법 -- 7번째 방법을 쓰자! 처럼 방법을 많이 알수록 좋다.
+		// 첫 번째 방법
 		/*
 		var position = document.getElementById("userPosition").value;
 		
