@@ -47,7 +47,12 @@
 <div>
 	<h2>성적 처리 버튼 클릭시 Receive02.jsp 페이지 출력</h2>
 	
-	<form>
+	<form action="Receive02_1.jsp" method="get">
+		이름 <input type="text" name="userName" class="txt"><br>
+		국어점수<input type="text" name="userKor" class="txt"><br>
+		영어점수<input type="text" name="userEng" class="txt"><br>
+		수학점수<input type="text" name="userMat" class="txt"><br>
+		<button>성적 처리</button>
 	
 	</form>
 
