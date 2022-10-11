@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Send01.html</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+
+<!-- ○ 데이터 송수신 관련 실습01
+	 - 이름과 전화번호를 입력 받는 html 페이지를 작성한다. 
+	 	(Send01.html)
+	 	
+	 - 페이지 레이아웃
+	   -----------------------------------
+	   
+	   이름		 [        ]
+	   전화번호  [        ]
+
+		< 회원 가입 >
+		
+	   -------------------------------------
+	  - 회원 가입 버튼 클릭시
+		『엄소연님, 회원가입이 완료 되었습니다.
+		  회원님께서 등록하신 전화번호는  010-1111-1111 입니다.』
+		  라는 내용을 출력하는 JSP 페이지를 작성한다.
+		  (Receive01.jsp)
+		  
+		 → request.getParameter("이름식별자"); 
+		 → request.getParameter("전화번호식별자"); 
+		  
+		 - 사용자의 최초 요청 페이지는 
+		 『localhost:8090/WebApp06/Send01.html』로 한다.	 
+	 -->
+	 
+<div>
+	<h1>회원가입 버튼을 누르면 다른페이지로 전환</h1>
+</div>
+<div>
+	<form action="Receive01_1.jsp" method="get">
+	
+		<br>
+		이름 <input type="text" name="name" class="text" id="1">
+		<br>
+		전화번호 <input type="text" name="tel" class="text" id="2">
+		<br><br>
+		<input type="submit" value="회원 가입" class="btn">
+		
+	</form>
+</div>
+
+
+
+</body>
+</html>

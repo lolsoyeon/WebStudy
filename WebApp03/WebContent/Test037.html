@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test037.html</title>
+
+
+<script type="text/javascript">
+
+	// 배열 구성 → 전역 변수
+	var boardArray = new Array();
+	
+	// 사용자 정의 객체 구성(→ 생성자 함수 정의)
+	function Board(uName, uContent)
+	{
+		this.userName = uName;
+		this.content = uContent;
+		this.writeDay = new Date();
+	}
+	
+	// 프로토타입 구성을 통해... 사용자 정의 객체의 함수(기능, 동작, 행위) 정의
+	// Board.prototype.userDateString = 값;
+	// Board.prototype.userDateString = 기능;
+	 Board.prototype.userDateString = function()
+	{
+		// return 내용;
+		return this.writeDay.getFullYear() + "-"
+			 + (this.writeDay.getMonth()+1) + "-"
+			 + this.writeDay.getDate() + " "
+			 + this.writeDay.getHours() + ":"
+			 + this.writeDay.getMinutes() + ":"
+			 + this.writeDay.getSeconds();
+	};
+	
+	// 시 → getHours()
+	// 분 → getMinutes()
+	// 초 → getSeconds()
+	
+	
+	// 방명록의 글쓰기 버튼이 클릭되었을때 호출되어 기능하는 함수 정의
+	function protoTest()
+	{
+// 		alert("확인");
+		var name = document.getElementById("uName").value;
+		var content = document.getElementById("uContent").value;
+		
+		var len = boardArray.length;
+// 		alert(len);
+		// --==>> 0 아무것도 담지않은 현 시점 에서의 테스트 시...
+		
+		boardArray[len] = new Board(name, content);
+		
+// 		alert(len);
+		//--==>> 0,1,2,... 작성이 이루어질 때마다(글씨기 버튼을 클릭 할때마다) + 1
+		
+		print(len);
+	}
+	
+	// 내용 출력
+	function print(idx)
+	{
+		// 테스트
+// 		var strTemp = boardArray[idx].content;
+// 		alert(strTemp);
+// 		내용 content 에 입력하는것이 strTemp에 담기는 상황확인.
+
+		var tableNode = document.getElementById("bbsTable");
+		var trNode = document.createElement("tr");
+		 
+		// 번호 작성자이름 내용 작성일
+		trNode.appendChild(createTdNode((idx+1).toString()));					// 번호
+		trNode.appendChild(createTdNode(boardArray[idx].userName));				// 이름 
+		trNode.appendChild(createTdNode(boardArray[idx].content));			// 내용 
+// 		trNode.appendChild(createTdNode(boardArray[idx].writeDay));			// 작성일
+		trNode.appendChild(createTdNode(boardArray[idx].userDateString()));	// 작성일
+		
+		tableNode.appendChild(trNode);
+		
+	}
+	
+	// 내용 구성된 td 노드 생성 및 반환 함수
+	function createTdNode(val)
+	{
+		var textNode = document.createTextNode(val);
+		var tdNode = document.createElement("td");
+		// 이렇게 만들어진 tdNode에 어펜드 차일드
+		tdNode.appendChild(textNode);
+		
+		return tdNode;
+	}
+	
+</script>
+
+
+</head>
+<body>
+
+<div>
+	<h1>자바스크립트 활용</h1>
+	<hr>
+</div>
+
+<div>
+	<p>사용자 정의 객체 및 프로토타입을 활용한 자바스크립트</p>
+	
+	<div>
+		<form>
+			<!--  입력 폼을 구성하는 레이아웃 테이블 → div로 전환해보기 -->
+			<table class="table">
+				<tr>
+					<th>작성자</th>
+					<td>
+						<input type="text" id="uName" class="txt">
+					</td>
+				</tr>
+				
+				<tr>
+					<th>내용</th>
+					<td>
+						<input type="text" id="uContent" class="txt">
+					</td>
+				</tr>
+			</table>
+			<br>
+			
+			<input type="button" class="btn control" value="글쓰기" onclick="protoTest()">
+			<br><br><br>
+			
+			
+			<!--  내용이 리스크 형식으로 보여지는 레이아웃 테이블 → div로 전환(요즘은 표마저도 div 로 많이씀) -->
+			<table class="table" id="bbsTable">
+				<tr>
+					<th>번호</th>
+					<th>작성자</th>
+					<th>내용</th>
+					<th>작성일</th>
+				</tr>
+			</table>
+			
+			
+		</form>
+	</div>
+	
+</div>
+
+
+</body>
+</html>
