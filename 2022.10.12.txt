@@ -1,0 +1,71 @@
+<%for(int i = 1; i<=9; i++) {%>
+   	 <p>  <%=dan %> * <%=i %>  = <%=dan*i %> </p>
+	  <%} %>
+
+inline 태그
+
+ <span>  <%=dan %> * <%=i %>  = <%=dan*i %> </span>	// 개행안됨
+<a> <%=dan %> * <%=i %>  = <%=dan*i %></a>		// 개행안됨 
+
+
+
+Block 태그
+
+<h2>  <%=dan %> * <%=i %>  = <%=dan*i %> </h2>   	// 개행됨
+ <p>  <%=dan %> * <%=i %>  = <%=dan*i %> </p>   	// 개행됨 
+<div><%=dan %> * <%=i %>  = <%=dan*i %></div>		// 개행됨
+
+
+
+this 셀렉트 객체
+
+this.form 폼객체 가 담긴다.
+
+this.value
+
+
+String danStr = request.getParameter("dan");
+	int dan = Integer.parseInt(danStr);
+	
+	String result = "";
+	
+	for(int i =1; i<=9; i++)
+		result += String.format("%d * %d = %d<br>",dan, i,(dan*i));
+
+
+
+1단계. 1년 1월 1일 부터.... 입력 년도 기준 전년도 12월 31일 까지의
+ 총 날짜 수 구하기
+2단계. 해당 년도 1월 1일 부터 해당년도 해당월 1일 까지의 총 날짜수 구하기
+3단계. 해당 년도 해당 월의 첫날(1일의 요일을 구하기)
+	- 1 →월, 2→화, 3→수, 4→목, 5→금, 6→토 0==7 →일 
+
+4단계. 해당년도 해당월의 마지막 날짜 구하기.
+5단계. 해당년도 해당 월의 기준달력 구성(출력, 그리기) 랜더링 과정에서 테이블 동적 생성
+
+
+
+for(i=0; i<=month.length; i++)
+		{
+			document.write("<option>" + month[i] + "</option>");
+			obj.submit();
+		}
+
+
+
+String date = String.format("%tF", java.util.Calendar.getInstance());
+
+
+
+
+
+alert("함수 호출확인");
+		alert(obj);
+// 		var month = new Array();
+// 		var month = [1,2,3,4,5,6,7,8,9,10,11,12];
+// 		for(i=0; i<=month.length; i++)
+// 		{
+		
+// 			document.write("<option>" + month[i] + "</option>");
+// 			obj.submit();
+// 		

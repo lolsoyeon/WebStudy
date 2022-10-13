@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Send02.jsp</title>
+<title>Send02_1.jsp</title>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
@@ -47,7 +47,7 @@
 <div>
 	<h2>성적 처리 버튼 클릭시 Receive02.jsp 페이지 출력</h2>
 	
-	<form action="Receive02_1.jsp" method="get">
+	<form action="Receive02_1.jsp" method="post">
 		이름 <input type="text" name="userName" class="txt"><br>
 		국어점수<input type="text" name="userKor" class="txt"><br>
 		영어점수<input type="text" name="userEng" class="txt"><br>

@@ -6,6 +6,8 @@
 	String userEng = request.getParameter("userEng");
 	String userMat = request.getParameter("userMat");
 	
+	request.setCharacterEncoding("UTF-8");
+	
 	int kor = Integer.parseInt(userKor);
 	int eng = Integer.parseInt(userEng);
 	int mat = Integer.parseInt(userMat);
@@ -44,7 +46,7 @@
 	
 	<span><%=userName %>님, 성적 처리가 완료 되었습니다.<br>
 		  회원님의 점수는 국어: <%=kor %>점, 영어: <%=eng %>점, 수학: <%=mat %>점 입니다.<br>
-		  총점은 <%=tot %>점 평균은 <%=avg %>점 입니다.</span>
+		  총점은 <%=tot %>점, 평균은 <%=avg %>점 입니다.</span>
 
 
 	</form>

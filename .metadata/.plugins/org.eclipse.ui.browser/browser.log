@@ -44,3 +44,13 @@
 10월 10, 2022 14:27:01.34 [13764:15420:1010/142701.346:ERROR:device_event_log_impl.cc(214)] [14:27:01.346] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
 10월 10, 2022 14:27:01.34 [13764:15420:1010/142701.346:ERROR:device_event_log_impl.cc(214)] [14:27:01.346] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
 10월 10, 2022 14:27:59.32 [13764:11740:1010/142759.328:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+10월 13, 2022 12:42:36.84 NEW SESSION
+10월 13, 2022 12:42:36.84 [15104:1792:1013/124236.834:ERROR:device_event_log_impl.cc(214)] [12:42:36.834] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 吏�� 뺣맂 �뙆�씪�쓣 李얠쓣 �닔 �뾾�뒿�땲�떎. (0x2)
+10월 13, 2022 12:42:36.84 [15104:1792:1013/124236.839:ERROR:device_event_log_impl.cc(214)] [12:42:36.839] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 13, 2022 12:42:36.85 [15104:1792:1013/124236.851:ERROR:device_event_log_impl.cc(214)] [12:42:36.851] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 13, 2022 12:42:36.85 [15104:1792:1013/124236.851:ERROR:device_event_log_impl.cc(214)] [12:42:36.851] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 13, 2022 12:42:36.85 [15104:1792:1013/124236.855:ERROR:device_event_log_impl.cc(214)] [12:42:36.855] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 13, 2022 12:43:33.11 [15104:17372:1013/124333.114:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 13, 2022 14:09:39.01 [15104:1792:1013/140939.012:ERROR:interface_endpoint_client.cc(689)] Message 1 rejected by interface blink.mojom.WidgetHost
+10월 13, 2022 17:43:33.11 [15104:16728:1013/174333.114:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater

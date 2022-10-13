@@ -45,9 +45,47 @@
 </div>
 
 <div>
-	<h2>성적 처리 버튼 클릭시 Receive02.jsp 페이지 출력</h2>
+	<h2>성적 처리</h2>
 	
-	<form>
+	<form action="Receive02.jsp" method="post">
+		<table class="table">
+			<tr>
+				<th>이름</th>
+				<td>
+					<input type="text" name="userName" class="txt">
+				</td>
+			</tr>
+		
+			<tr>
+				<th>국어점수</th>
+				<td>
+					<input type="text" name="scoreKor" class="txt">
+				</td>
+			</tr>
+			
+			
+			
+			<tr>
+				<th>수학점수</th>
+				<td>
+					<input type="text" name="scoreEng" class="txt">
+				</td>
+			</tr>
+			
+			<tr>
+				<th>영어점수</th>
+				<td>
+					<input type="text" name="scoreMat" class="txt">
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="성적 처리"class="btn">
+					<input type="reset" value="취소"class="btn">
+				</td>
+			</tr>
+		</table>
 	
 	</form>
 
