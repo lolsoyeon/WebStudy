@@ -2,13 +2,13 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%
 
-	// 이전 페이지로 부터 데이터 수신
+	// 이전 페이지(자기자신)으로 부터 데이터 수신
 	//-- year, month
 	String sYear = request.getParameter("year");
 	String sMonth = request.getParameter("month");
 
 	
-	// Calendar  객체 생성  정적인 getInstance()
+	// Calendar  객체 생성  -- 정적인 getInstance()
 	// java.util.Calendar cal = java.util.Calendar.getInstance();
 	Calendar cal = Calendar.getInstance();
 
@@ -18,8 +18,8 @@
 
 
  		
- 	// 기본적으로 이과 같이 년, 월 구성(detailt))
  	// 그려야 할 달력의 년, 월 구성
+ 	// -- 최초 요청
  	int selectYear = nowYear;
  	int selectMonth = nowMonth;
  	
@@ -130,7 +130,8 @@
 		week++;
 		
 		// calStr += "<td>" + i + "</td>";
-		
+		// - 1 →월, 2→화, 3→수, 4→목, 5→금, 6→토 0==7 →일 ?? 
+
 		if (selectYear == nowYear && selectMonth == nowMonth && i == nowDay && week%7==0)
 		calStr += "<td class='nowSat'>" + i + "</td>";
 		

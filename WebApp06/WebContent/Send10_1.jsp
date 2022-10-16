@@ -39,6 +39,7 @@
 				<option value="sub">-</option>
 				<option value="mul">*</option>
 				<option value="div">/</option>
+				<option value="ahrt">%</option>
 			</select>
 		
 			정수 입력2 <input type="text" class="txt" name="num2">

@@ -1,7 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%
 	// 이전 페이지(Forward10.jsp)로 부터 넘어온 데이터 수신
-	//  resultStr setAtrribute() getAttribute()  → Object 반환
+	//  resultStr → setAtrribute() → getAttribute() → Object 반환
  	String resultStr = (String)request.getAttribute("resultStr");
 %>
 <!DOCTYPE html>

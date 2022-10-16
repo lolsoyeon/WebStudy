@@ -20,9 +20,11 @@
 		result += String.valueOf(num1-num2);
 	else if (op.equals("div"))
 		result += String.format("%.1f", num1/(double)num2);
+	else if (op.equals("ahrt"))
+		result += String.format("%.3f", num1%(double)num2);
 	
 	// 데이터 담기 (추가)
-	request.setAttribute("result", result);
+	request.setAttribute("myResult", result);
 
 %>
 <!DOCTYPE html>
