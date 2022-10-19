@@ -11,10 +11,10 @@ public class MemberDTO
 	// 주요 속성 구성
 	private String sid, name, tel;
 	//-- TBL_MEMBER 테이블의 레코드 구성
-	// (테이블의 컬럼 구조와 같은 속성으로 구성)
+	// (테이블의 컬럼 구조와 같은 속성으로 구성) 
 
 	
-	// getter / setter 구성
+	// getter / setter 구성 메소드로 정의해 놓으면 입맛따라가능
 	public String getSid()
 	{
 		return sid;
