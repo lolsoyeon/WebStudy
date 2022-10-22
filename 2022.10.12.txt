@@ -21,7 +21,7 @@ this 셀렉트 객체
 
 this.form 폼객체 가 담긴다.
 
-this.value
+this.value 객체의 value
 
 
 String danStr = request.getParameter("dan");

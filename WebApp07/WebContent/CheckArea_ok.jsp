@@ -41,7 +41,7 @@
 	if (checkGroups != null)
 	{
 		for (String item : checkGroups)
-			str += checkGroups;
+			str += item + " ";
 	}
 	
 	

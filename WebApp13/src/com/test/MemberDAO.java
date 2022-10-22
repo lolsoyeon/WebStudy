@@ -227,7 +227,7 @@ public class MemberDAO
 		int result = 0;
 		
 		// 쿼리문 준비
-		String sql = "DELETE FROM TBL_MEMBER WHERE SID= ?";
+		String sql = "DELETE FROM TBL_MEMBER WHERE SID = ?";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		pstmt.setString(1, sid);
 		
@@ -246,7 +246,7 @@ public class MemberDAO
 	{
 		int result = 0;
 		
-		// 쿼리문 준비
+		// 쿼리문 준비 제대로하기
 		String sql = "SELECT COUNT(*) AS COUNT FROM TBL_MEMBERSCORE";
 		
 		PreparedStatement pstmt = conn.prepareStatement(sql);
@@ -255,6 +255,7 @@ public class MemberDAO
 		
 		while(rs.next())
 		{
+			// dto를 매개변수로 넣을것이 아니다..
 			MemberDTO dto = new MemberDTO();
 			
 			dto.setSid(rs.getString("SID"));
@@ -263,6 +264,7 @@ public class MemberDAO
 		}
 		
 		pstmt.close();
+		
 		return result;
 		
 		
@@ -270,31 +272,34 @@ public class MemberDAO
 	}
 	*/
 	
+	// 자식 테이블의 참조 데이터 레코드수를 확인하는 메소드
 	public int refCount(String sid) throws SQLException
 	{
 		int result = 0;
 		
-		//String sql = "SELECT SID, KOR, ENG, MAT FROM TBL_MEMBERSCORE WHERE SID=?";
-		// 소연아~~
-		// 이 쿼리문은... 자식 테이블에... 부모 테이블의 데이터를 참조하는
-		// 레코드 수가 몇 개인지 확인하는 쿼리문이 아닌데...????
+		String sql="SELECT COUNT(*) AS COUNT FROM TBL_MEMBERSCORE WHERE SID=?";
 		
-		String sql = "SELECT COUNT(*) AS COUNT FROM TBL_MEMBERSCORE WHERE SID=?";
-
 		PreparedStatement pstmt = conn.prepareStatement(sql);
+		
+		// executeQuery 하기 전에 sid? 부분 set 해준다
 		pstmt.setString(1, sid);
 		
-		ResultSet rs =  pstmt.executeQuery();
+		ResultSet rs = pstmt.executeQuery();
 		
-		while(rs.next())
+		while (rs.next())
+		{
 			result = rs.getInt("COUNT");
-		
+			
+		}
+	
 		rs.close();
 		pstmt.close();
 		
 		return result;
-	
+		
 	}
+
+	
 }
 
 

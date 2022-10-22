@@ -13,7 +13,7 @@
 
 	function sendIt()
 	{
-		// alert("힘수 호출");
+		// alert("함수 호출");
 		var f = document.forms[0];
 		
 		if (!f.userName.value)
