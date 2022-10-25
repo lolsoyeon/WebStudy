@@ -12,9 +12,9 @@
 	01. ○ DBConn.java 
  	02. ○ BoardDTO.java
  	03. △ BoardDAO.java
- 	04. MyUtil.java
+ 	04. ○MyUtil.java
  
- 	05. List.java
+ 	05. △List.java
  	06. Create.java
  	07. Create_ok.java
  	08. Article.jsp

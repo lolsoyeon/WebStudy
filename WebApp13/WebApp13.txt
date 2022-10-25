@@ -11,13 +11,13 @@
    JSP로 구성할 수 있도록 한다.
 	
 ○ 파일 구성
-	- WebApp13_scott.sql
+	00.- WebApp13_scott.sql
 	
-	- com.util.DBConn.java
-	- com.test.MemberDTO.java
-	- com.test.MemberScoreDTO.java
-	- com.test.MemberDAO.java
-	- com.test.MemberScoreDAO.java
+	01.- com.util.DBConn.java
+	02.- com.test.MemberDTO.java
+	02.1- com.test.MemberScoreDTO.java
+	03.- com.test.MemberDAO.java
+	03.1- com.test.MemberScoreDAO.java
 	
 	-○ MemberSelect.jsp
 	-○ MemberInsertForm.jsp

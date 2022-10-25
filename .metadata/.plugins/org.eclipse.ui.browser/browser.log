@@ -272,3 +272,10 @@
 10월 23, 2022 24:33:20.60 [19752:14604:1023/003320.605:ERROR:device_event_log_impl.cc(214)] [00:33:20.605] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
 10월 23, 2022 24:33:20.60 [19752:14604:1023/003320.605:ERROR:device_event_log_impl.cc(214)] [00:33:20.605] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
 10월 23, 2022 24:34:18.59 [19752:18836:1023/003418.595:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 23, 2022 05:34:18.59 [19752:4960:1023/053418.596:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 23, 2022 07:40:56.72 [19752:14604:1023/074056.721:ERROR:device_event_log_impl.cc(214)] [07:40:56.721] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+10월 23, 2022 10:34:19.86 [19752:19116:1023/103419.861:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 23, 2022 15:34:19.86 [19752:17756:1023/153419.863:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 23, 2022 20:34:19.86 [19752:964:1023/203419.863:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 24, 2022 01:34:19.87 [19752:14824:1024/013419.871:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 24, 2022 06:34:19.87 [19752:18644:1024/063419.878:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
