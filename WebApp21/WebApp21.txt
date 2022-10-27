@@ -6,21 +6,23 @@
 
 ○ 물리적 구성 요소
 
+○ 진행 일자 : 2022-10-24 ~ 2022-10-25 까지 거의 꽉채워서 2일 진행 
 
- 	00. △ WebApp21_scott.sql
+
+ 	00. ○ WebApp21_scott.sql
  
 	01. ○ DBConn.java 
  	02. ○ BoardDTO.java
- 	03. △ BoardDAO.java
- 	04. ○MyUtil.java
+ 	03. ○ BoardDAO.java
+ 	04. ○ MyUtil.java
  
- 	05. △List.java
- 	06. Create.java
- 	07. Create_ok.java
- 	08. Article.jsp
- 	09. Update.jsp
- 	10. Update_ok.jsp
- 	11. Delete.jsp 
+ 	05. ○ List.java
+ 	06. ○ Create.java
+ 	07. ○ Create_ok.java
+ 	08. ○ Article.jsp
+ 	09. ○ Update.jsp
+ 	10. ○ Update_ok.jsp
+ 	11. ○ Delete_ok.jsp 
 
 
 

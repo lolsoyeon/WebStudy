@@ -42,6 +42,7 @@
 		 currentPage = totalPage;
 
 	// 데이터베이스로 부터 가져올 시작과 끝 위치
+	// 11-1 * 11 = 110 
 	int start = (currentPage -1) * numPerPage + 1;
 	int end = currentPage * numPerPage;
 	
@@ -59,7 +60,7 @@
 	String articleUrl = cp + "/Article.jsp";
 	
 	if (param.equals(""))
-		articleUrl = articleUrl + "?pageNum=" +currentPage;
+		articleUrl = articleUrl + "?pageNum=" + currentPage;
 	else
 		articleUrl = articleUrl + param + "&pageNum=" + currentPage;
 	
@@ -99,7 +100,8 @@
 	
 	
 		<div id="rightHeader">
-			<input type="button" value="글올리기" class="btn2">
+			<input type="button" value="글올리기" class="btn2"
+			 onclick="javascript:location.href='<%=cp%>/Create.jsp'">
 		</div> <!-- #rightHeader -->
 	
 	</div> <!-- #bbsList_header -->
@@ -137,7 +139,10 @@
 		 	%>
 		 	<dl>
 				<dd class="num"><%=dto.getNum() %></dd>
-				<dd class="subject"><%=dto.getSubject() %></dd>
+				<dd class="subject">
+<%-- 					<a href="Article.jsp?pageNum=5&num=20"><%=dto.getSubject() %></a> --%>
+					<a href="<%=articleUrl %>&num=<%=dto.getNum()%>"><%=dto.getSubject() %></a>
+				</dd>
 				<dd class="name"><%=dto.getName() %></dd>
 				<dd class="created"><%=dto.getCreated() %></dd>
 				<dd class="hitCount"><%=dto.getHitCount() %></dd>
@@ -146,9 +151,6 @@
 		 	<%
 		 	}
 		 	%>
-		 
-		 
-		 
 		 
 		 
 		</div><!-- #lists -->

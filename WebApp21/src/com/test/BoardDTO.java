@@ -13,12 +13,8 @@ public class BoardDTO		// 상속의 개념을 사용하지 않았음
 	
 	
 	private int num;
-	private String name, pwd, email, subject, content, ipAddr, created; 
+	private String name, pwd, email, subject, content, ipAddr, created;
 	private int hitCount;
-	
-	
-	// 사용자정의 생성자를 정의 하지 않음
-	//→ 컴피일 과정에서 default 생성자가 자동으로 삽입됨.
 	
 	// getter / setter 구성
 	public int getNum()
@@ -93,11 +89,6 @@ public class BoardDTO		// 상속의 개념을 사용하지 않았음
 	{
 		this.hitCount = hitCount;
 	}
-	
-	
-	
-	
-	
 	
 	
 

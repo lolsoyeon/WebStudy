@@ -18,6 +18,7 @@ public class BoardDAO
 	
 	
 	// 생성자 활용
+	// 생성자 활용 아닌경우 꼭외우기~!
 	public BoardDAO(Connection conn)
 	{
 		this.conn = conn;
@@ -58,23 +59,28 @@ public class BoardDAO
 	// 게시물 작성 → 데이터 입력 혼자서 백지로해보기
 	public int insertDate(BoardDTO dto)
 	{
-		int result =0;
+		int result = 0;
 		
 		String sql = "";
 		PreparedStatement pstmt = null;
 		
 		try
 		{
-			dto = new BoardDTO();
+			// 소연아~
+			// 매개변수로 넘겨받은 dto 가 있는데... 이 구문은 왜 쓴거야???
+			//dto = new BoardDTO();
 			
-			// HITCOUNT 는 기본값 0 또는 DEFAULT 또는 입력항목 생략 가능
+			// HITCOUNT 는 기본값 0 또는 default 또는 입력항목 생략 가능
 			// CREATED 는 기본값 SYSDATE 또는 default 또는 입력항목 생략도 가능
-			sql = "INSERT INTO TBL_BOARD(NUM, NAME, PWD, EMAIL, SUBJECT, CONTENT, IPADDR, HITCOUNT, CREATED)"
-//					+ " VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
-//					+ " VALUES(?, ?, ?, ?, ?, ?, ?, 0, SYSDATE)";
-					+ " VALUES(?, ?, ?, ?, ?, ?, ?, default, default)";
+			sql = "INSERT INTO TBL_BOARD(NUM, NAME, PWD, EMAIL, SUBJECT"
+					+ ", CONTENT, IPADDR, HITCOUNT, CREATED)"
+//					+ " VALUES(?, ?, ?, ?, ?, ?, ?)";
+					+ " VALUES(?, ?, ?, ?, ?, ?, ?, 0, SYSDATE)";
+//					+ " VALUES(?, ?, ?, ?, ?, ?, ?, default, default)";
 			
 			pstmt = conn.prepareStatement(sql);
+			
+			
 			
 			pstmt.setInt(1, dto.getNum());
 			pstmt.setString(2, dto.getName());
@@ -87,6 +93,11 @@ public class BoardDAO
 			// pstmt.setString(9, dto.getCreated());
 			// 아예 인서트 sql 문에서 HITCOUNT 와 CREATED 를 제거 해도된다.
 			// 이유는 table 생성할 때 default(기본 자동 생성) 로 정해놔서
+			
+			// 테스트
+			//System.out.println("name : " + dto.getName());
+			//System.out.println("sql : " + sql);
+			
 			
 			result = pstmt.executeUpdate();
 				
@@ -103,6 +114,7 @@ public class BoardDAO
 	
 	// DB 레코드의 갯수를 가져오는 메소드 정의 select
 	// → 검색 기능을 추가하게 되면 수정하게 될 메소드  수정고민해보기
+	/*
 	public int getDataCount()
 	{
 		int result = 0 ;
@@ -130,7 +142,52 @@ public class BoardDAO
 		
 		return result;
 		
-	}//end getDetaCount
+	}//end getDetaCount()
+	*/
+	public int getDataCount(String searchKey, String searchValue)
+	{
+		// searchKey   → subject / name / content
+		// searchValue →"%취미%"/ "%길동%"/ "%오락%"
+		
+		int result = 0;
+		
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		String sql = "";
+		
+		
+		try
+		{
+			// 선 가공 
+			searchValue = "%" + searchValue + "%";
+			
+			sql = "SELECT COUNT(*) AS COUNT"
+				+ " FROM TBL_BOARD"
+				+ " WHERE "+ searchKey +" LIKE ?";
+			
+			pstmt = conn.prepareStatement(sql);
+			
+			pstmt.setString(1, searchValue);
+			
+			rs = pstmt.executeQuery();
+			
+			if (rs.next())
+				result = rs.getInt("COUNT");
+			
+			
+			rs.close();
+			pstmt.close();
+			
+		} catch (Exception e)
+		{
+			System.out.println(e.toString());
+		}
+		
+		return result;
+		
+	}//end getDataCount(String searchKey, String searchValue)
+	
+	
 	
 	
 	// 특정 영역의(시작번호 ~ 끝번호) 게시물의 목록을 얻어오는 메소드
@@ -178,7 +235,9 @@ public class BoardDAO
 	*/
 	
 	
+	// 특정 영역의(시작번호 ~ 끝번호) 게시물의 목록을 얻어오는 메소드
 	// 복습할 부분 혼자서 백지로 해보기
+	/*
 	public List<BoardDTO> getList(int start, int end)
 	{
 		List<BoardDTO> result = new ArrayList<BoardDTO>();
@@ -228,6 +287,42 @@ public class BoardDAO
 			System.out.println(e.toString());
 		}
 		return result;
+		
+	}//end getList(int start, int end)
+	
+	*/
+	public List<BoardDTO> getList(int start, int end, String searchKey, String searchValue)
+	{															
+		List<BoardDTO> result = new ArrayList<BoardDTO>();
+		
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		String sql = "";
+		
+		try
+		{
+			 searchValue = "%" + searchValue +"%";
+			 
+			 sql = "SELECT NUM, NAME, SUBJECT, HITCOUNT, CREATED FROM"
+						+ " ("
+						+ "SELECT ROWNUM RNUM, DATA.*"
+						+ " FROM"
+						+ " ( SELECT NUM, NAME, SUBJECT, HITCOUNT"
+						+ ", TO_CHAR(CREATED, 'YYYY-MM-DD') AS CREATED"
+						+ " FROM TBL_BOARD"
+						+ " WHERE" + searchKey + "Like ?"
+						+ " ORDER BY NUM DESC"
+						+ " ) DATA"
+						+ " )"
+						+ " WHERE RNUM >= ? AND RNUM <= ?";
+			 
+		} catch (Exception e)
+		{
+			System.out.println(e.toString());
+		}
+		
+		return result;
+		
 	}
 	
 	// 특정 게시물 조회에 따른 조회 횟수 증가 메소드 정의

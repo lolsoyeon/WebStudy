@@ -6,14 +6,20 @@
 <fullyQualifiedTypeName name="java.lang.ClassCastException"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="oracle.net.aso.p"/>
 <fullyQualifiedTypeName name="com.util.DBConn"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.test.MemberDAO"/>
 <fullyQualifiedTypeName name="com.test.MemberDTO"/>
 <fullyQualifiedTypeName name="com.test.MemberScoreDAO"/>
 <fullyQualifiedTypeName name="com.test.MemberScoreDTO"/>
+<fullyQualifiedTypeName name="com.test.BoardDAO"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="sun.security.jca.GetInstance"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.test.BoardDTO"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 </qualifiedTypeNameHistroy>
