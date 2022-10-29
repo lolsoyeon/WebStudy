@@ -5,80 +5,87 @@
 
 package com.util;
 
-import java.sql.DriverManager;
 import java.sql.Connection;
+import java.sql.DriverManager;
 
 
 public class DBConn
 {
 	
 	// 변수 선언
-	public static Connection dbConn;
-	
-	
-	public static Connection getConnection()
-	{
-		if (dbConn == null)
+		public static Connection dbConn;
+		
+		
+		public static Connection getConnection()
 		{
-			try
+			if (dbConn == null)
 			{
-				String url = "jdbc:oracle:thin:@211.238.142.48:1521:xe";
-				String user = "scott";
-				String pwd = "tiger";
-				
-				
-				Class.forName("oracle.jdbc.driver.OracleDriver");
-				
-				dbConn = (Connection) DriverManager.getConnection(url, user, pwd);
-				
-				
-				
-				
-				
-			} catch (Exception e)
-			{
-				System.out.println(e.toString());
-			}
-		}
-		return dbConn;
-	}
-	
-	
-	public static Connection getConnection(String url, String user, String pwd)
-	{
-		if (dbConn == null)
-		{
-			try
-			{
-				Class.forName("oracle.jdbc.driver.OracleDriver");
-				
-				dbConn = (Connection) DriverManager.getConnection(url, user, pwd);
-				
-			} catch (Exception e)
-			{
-				System.out.println(e.toString());
-			}
-		}
-		return dbConn;
-	}
-	
-	public static void close()
-	{
-		if (dbConn != null)
-		{
-			try
-			{
-				if (!dbConn.isClosed())
+				try
 				{
-					dbConn.close();
+					String url = "jdbc:oracle:thin:@211.238.142.48:1521:xe";
+					String user = "scott";
+					String pwd = "tiger";
+					
+					
+					Class.forName("oracle.jdbc.driver.OracleDriver");
+					
+					dbConn = (Connection) DriverManager.getConnection(url, user, pwd);
+					
+					
+					
+					
+					
+				} catch (Exception e)
+				{
+					System.out.println(e.toString());
 				}
-				
-			} catch (Exception e)
-			{
-				System.out.println(e.toString());
 			}
+			return dbConn;
 		}
-		dbConn = null;
-	}
+		
+		
+		public static Connection getConnection(String url, String user, String pwd)
+		{
+			if (dbConn == null)
+			{
+				try
+				{
+					Class.forName("oracle.jdbc.driver.OracleDriver");
+					
+					dbConn = (Connection) DriverManager.getConnection(url, user, pwd);
+					
+				} catch (Exception e)
+				{
+					System.out.println(e.toString());
+				}
+			}
+			return dbConn;
+		}
+		
+		public static void close()
+		{
+			if (dbConn != null)
+			{
+				try
+				{
+					if (!dbConn.isClosed())
+					{
+						dbConn.close();
+					}
+					
+				} catch (Exception e)
+				{
+					System.out.println(e.toString());
+				}
+			}
+			dbConn = null;
+		}
+
+
+	
+	
+	
+	
+	
 
 }

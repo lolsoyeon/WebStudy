@@ -20,7 +20,9 @@
 		<item key="" value="C:\Downlods\11_epf\WebStandard.epf"/>
 		<item key="WizardPreferencesExportPage1.STORE_OVERWRITE_EXISTING_FILES_ID" value="false"/>
 		<item key="WizardPreferencesExportPage1.EXPORT_ALL_PREFERENCES_ID" value="true"/>
+		<item key="" value="C:\Downlods\11_epf\JstlStandard.epf"/>
 		<list key="WizardPreferencesExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Downlods\11_epf\JstlStandard.epf"/>
 			<item value="C:\Downlods\11_epf\WebStandard.epf"/>
 		</list>
 	</section>
@@ -42,6 +44,20 @@
 		<list key="textEntries">
 		</list>
 		<list key="textArray">
+		</list>
+	</section>
+	<section name="org.eclipse.ui.internal.dialogs.WorkbenchEditorsDialog">
+		<item key="allPersp" value="false"/>
+		<item key="sort" value="0"/>
+		<list key="bounds">
+			<item value="2689"/>
+			<item value="621"/>
+			<item value="1002"/>
+			<item value="693"/>
+		</list>
+		<list key="columns">
+			<item value="318"/>
+			<item value="638"/>
 		</list>
 	</section>
 </section>

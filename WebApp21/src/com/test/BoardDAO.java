@@ -144,6 +144,7 @@ public class BoardDAO
 		
 	}//end getDetaCount()
 	*/
+	// DB 레코드의 갯수를 가져오는 메소드 정의 select
 	public int getDataCount(String searchKey, String searchValue)
 	{
 		// searchKey   → subject / name / content
@@ -303,18 +304,43 @@ public class BoardDAO
 		{
 			 searchValue = "%" + searchValue +"%";
 			 
-			 sql = "SELECT NUM, NAME, SUBJECT, HITCOUNT, CREATED FROM"
-						+ " ("
-						+ "SELECT ROWNUM RNUM, DATA.*"
-						+ " FROM"
-						+ " ( SELECT NUM, NAME, SUBJECT, HITCOUNT"
-						+ ", TO_CHAR(CREATED, 'YYYY-MM-DD') AS CREATED"
-						+ " FROM TBL_BOARD"
-						+ " WHERE" + searchKey + "Like ?"
-						+ " ORDER BY NUM DESC"
-						+ " ) DATA"
-						+ " )"
-						+ " WHERE RNUM >= ? AND RNUM <= ?";
+			 sql = "SELECT NUM, NAME, SUBJECT, HITCOUNT, CREATED"
+		               + " FROM"
+		               + " ("
+		               + " SELECT ROWNUM RNUM, DATA.*"
+		               + " FROM"
+		               + " ( SELECT NUM, NAME, SUBJECT, HITCOUNT"
+		               + ", TO_CHAR(CREATED,'YYYY-MM-DD') AS CREATED"
+		               + " FROM TBL_BOARD"
+		               + " WHERE " + searchKey + " LIKE ?"
+		               + " ORDER BY NUM DESC"
+		               + " ) DATA "
+		               + ") WHERE RNUM >= ? AND RNUM <= ?";
+
+			 
+			 pstmt = conn.prepareStatement(sql);
+			 
+			 
+			 pstmt.setString(1, searchValue);
+			 pstmt.setInt(2, start);
+			 pstmt.setInt(3, end);
+			 
+			 rs = pstmt.executeQuery();
+				
+				while (rs.next())
+				{
+					//BoardDTO 객체 생성 1등으로함
+					BoardDTO dto = new BoardDTO();
+					dto.setNum(rs.getInt("NUM"));
+					dto.setName(rs.getString("NAME"));
+					dto.setSubject(rs.getString("SUBJECT"));
+					dto.setHitCount(rs.getInt("HITCOUNT"));
+					dto.setCreated(rs.getString("CREATED"));
+				
+					result.add(dto);
+				}
+				rs.close();
+				pstmt.close();
 			 
 		} catch (Exception e)
 		{

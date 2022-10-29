@@ -202,7 +202,7 @@
 <!-- 			히든으로 넘기는 방법 -->
 			
 				<input type="hidden" name="num" value="<%=dto.getNum() %>">
-				<input type="text" name="pageNum" value="<%=pageNum %>">
+				<input type="hidden" name="pageNum" value="<%=pageNum %>">
 			
 				<input type="button" value="수정하기" class="btn2" onclick="sendIt()">
 				

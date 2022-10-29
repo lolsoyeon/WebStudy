@@ -29,10 +29,9 @@ public class DBCPConn
 				
 				Context ctx = new InitialContext();
 				
-				
 				//※ javax.naming.InitialContext 주요 메소드
 				//  - bind(String str,Object obj)
-				//	 : 서비스할 객체를 측정 이름으로 등록한다.
+				//	 : 서비스할 객체를 특정 이름으로 등록한다.
 				//  - rebind(String str,Object obj)
 				//	 : 서비스할 객체를 특정 이름으로 다시 등록한다.
 				//  - list(String str)
