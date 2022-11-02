@@ -17,6 +17,14 @@
 			$(this).stop().animate({"marginTop":"-80px"}, d+=150);
 		});
 		
+		// 설정되었을때의 기능동작행위, 해제되었을때의 기능동작행위
+		$("#navigation > li").hover(function()
+		{
+			$("a", $(this)).stop().animate({"marginTop":"-2px"}, 100);
+		}, function()
+		{
+			$("a", $(this)).stop().animate({"marginTop":"-80px"}, 400)
+		});
 		
 		
 	});

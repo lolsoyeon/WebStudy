@@ -28,8 +28,9 @@
 <%-- 	<h1>${list }</h1> --%>
 	<ul>
 		<c:forEach var="i" items="${list }">
-		<li>${i }</li>
+			<li>${i }</li>
 		</c:forEach>
+		
 	</ul>
 
 </div>

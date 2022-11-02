@@ -375,3 +375,73 @@
 10월 27, 2022 10:27:41.03 [6112:7552:1027/102741.033:ERROR:device_event_log_impl.cc(214)] [10:27:41.033] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
 10월 27, 2022 10:27:41.03 [6112:7552:1027/102741.034:ERROR:device_event_log_impl.cc(214)] [10:27:41.034] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
 10월 27, 2022 10:28:39.02 [6112:7012:1027/102839.027:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+10월 29, 2022 15:07:39.58 NEW SESSION
+10월 29, 2022 15:07:39.58 [13804:2452:1029/150739.573:ERROR:device_event_log_impl.cc(214)] [15:07:39.572] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 吏�� 뺣맂 �뙆�씪�쓣 李얠쓣 �닔 �뾾�뒿�땲�떎. (0x2)
+10월 29, 2022 15:07:39.58 [13804:2452:1029/150739.580:ERROR:device_event_log_impl.cc(214)] [15:07:39.580] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 29, 2022 15:07:39.58 [13804:2452:1029/150739.589:ERROR:device_event_log_impl.cc(214)] [15:07:39.589] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 29, 2022 15:07:39.59 [13804:2452:1029/150739.589:ERROR:device_event_log_impl.cc(214)] [15:07:39.589] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 29, 2022 15:07:39.59 [13804:2452:1029/150739.589:ERROR:device_event_log_impl.cc(214)] [15:07:39.589] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 29, 2022 15:13:23.16 [14204:12172:1029/151323.162:ERROR:device_event_log_impl.cc(214)] [15:13:23.162] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 吏�� 뺣맂 �뙆�씪�쓣 李얠쓣 �닔 �뾾�뒿�땲�떎. (0x2)
+10월 29, 2022 15:13:23.16 [14204:12172:1029/151323.166:ERROR:device_event_log_impl.cc(214)] [15:13:23.166] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 29, 2022 15:13:23.17 [14204:12172:1029/151323.172:ERROR:device_event_log_impl.cc(214)] [15:13:23.178] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 29, 2022 15:13:23.17 [14204:12172:1029/151323.172:ERROR:device_event_log_impl.cc(214)] [15:13:23.178] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 29, 2022 15:13:23.17 [14204:12172:1029/151323.172:ERROR:device_event_log_impl.cc(214)] [15:13:23.178] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 29, 2022 15:14:20.88 [14204:10676:1029/151420.888:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 29, 2022 15:51:04.74 [14204:12172:1029/155104.748:ERROR:device_event_log_impl.cc(214)] [15:51:04.748] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+10월 29, 2022 20:14:22.07 [14204:7508:1029/201422.074:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 30, 2022 01:14:22.08 [14204:6716:1030/011422.084:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 30, 2022 06:14:22.09 [14204:10336:1030/061422.099:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+10월 31, 2022 09:10:29.14 NEW SESSION
+10월 31, 2022 09:10:29.14 [11396:9444:1031/091029.139:ERROR:device_event_log_impl.cc(214)] [09:10:29.139] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 吏�� 뺣맂 �뙆�씪�쓣 李얠쓣 �닔 �뾾�뒿�땲�떎. (0x2)
+10월 31, 2022 09:10:29.14 [11396:9444:1031/091029.144:ERROR:device_event_log_impl.cc(214)] [09:10:29.144] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 31, 2022 09:10:29.15 [11396:9444:1031/091029.154:ERROR:device_event_log_impl.cc(214)] [09:10:29.155] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 31, 2022 09:10:29.15 [11396:9444:1031/091029.154:ERROR:device_event_log_impl.cc(214)] [09:10:29.155] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 31, 2022 09:10:29.15 [11396:9444:1031/091029.155:ERROR:device_event_log_impl.cc(214)] [09:10:29.156] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 31, 2022 09:11:27.06 [11396:11352:1031/091127.064:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 31, 2022 09:12:48.27 [1648:13948:1031/091248.271:ERROR:device_event_log_impl.cc(214)] [09:12:48.272] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 吏�� 뺣맂 �뙆�씪�쓣 李얠쓣 �닔 �뾾�뒿�땲�떎. (0x2)
+10월 31, 2022 09:12:48.27 [1648:13948:1031/091248.278:ERROR:device_event_log_impl.cc(214)] [09:12:48.278] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 31, 2022 09:12:48.28 [1648:13948:1031/091248.288:ERROR:device_event_log_impl.cc(214)] [09:12:48.288] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 31, 2022 09:12:48.28 [1648:13948:1031/091248.288:ERROR:device_event_log_impl.cc(214)] [09:12:48.288] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 31, 2022 09:12:48.28 [1648:13948:1031/091248.288:ERROR:device_event_log_impl.cc(214)] [09:12:48.289] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 31, 2022 09:13:46.26 [1648:13640:1031/091346.262:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 31, 2022 09:35:31.07 [12276:16200:1031/093531.072:ERROR:device_event_log_impl.cc(214)] [09:35:31.072] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 吏�� 뺣맂 �뙆�씪�쓣 李얠쓣 �닔 �뾾�뒿�땲�떎. (0x2)
+10월 31, 2022 09:35:31.07 [12276:16200:1031/093531.078:ERROR:device_event_log_impl.cc(214)] [09:35:31.077] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 31, 2022 09:35:31.08 [12276:16200:1031/093531.089:ERROR:device_event_log_impl.cc(214)] [09:35:31.088] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 31, 2022 09:35:31.09 [12276:16200:1031/093531.089:ERROR:device_event_log_impl.cc(214)] [09:35:31.088] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 31, 2022 09:35:31.09 [12276:16200:1031/093531.090:ERROR:device_event_log_impl.cc(214)] [09:35:31.089] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+10월 31, 2022 09:36:29.05 [12276:10664:1031/093629.059:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 31, 2022 14:36:29.07 [12276:17328:1031/143629.070:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 31, 2022 17:01:08.98 [12276:16200:1031/170108.985:ERROR:interface_endpoint_client.cc(689)] Message 1 rejected by interface blink.mojom.WidgetHost
+10월 31, 2022 19:05:36.06 [12276:16200:1031/190536.061:ERROR:device_event_log_impl.cc(214)] [19:05:36.060] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+10월 31, 2022 19:36:29.07 [12276:14236:1031/193629.074:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+11월 01, 2022 24:36:29.08 [12276:8512:1101/003629.082:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+11월 01, 2022 05:36:29.09 [12276:2072:1101/053629.091:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+11월 01, 2022 08:06:12.05 [15376:12348:1101/080612.053:ERROR:device_event_log_impl.cc(214)] [08:06:12.052] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 吏�� 뺣맂 �뙆�씪�쓣 李얠쓣 �닔 �뾾�뒿�땲�떎. (0x2)
+11월 01, 2022 08:06:12.05 [15376:12348:1101/080612.058:ERROR:device_event_log_impl.cc(214)] [08:06:12.057] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+11월 01, 2022 08:06:12.06 [15376:12348:1101/080612.069:ERROR:device_event_log_impl.cc(214)] [08:06:12.068] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+11월 01, 2022 08:06:12.06 [15376:12348:1101/080612.069:ERROR:device_event_log_impl.cc(214)] [08:06:12.068] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+11월 01, 2022 08:06:12.07 [15376:12348:1101/080612.069:ERROR:device_event_log_impl.cc(214)] [08:06:12.068] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+11월 01, 2022 08:07:09.98 [15376:9936:1101/080709.985:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+11월 02, 2022 10:48:23.04 NEW SESSION
+11월 02, 2022 10:48:23.04 [4884:15328:1102/104823.033:ERROR:device_event_log_impl.cc(214)] [10:48:23.032] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 吏�� 뺣맂 �뙆�씪�쓣 李얠쓣 �닔 �뾾�뒿�땲�떎. (0x2)
+11월 02, 2022 10:48:23.04 [4884:15328:1102/104823.039:ERROR:device_event_log_impl.cc(214)] [10:48:23.038] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+11월 02, 2022 10:48:23.04 [4884:15328:1102/104823.048:ERROR:device_event_log_impl.cc(214)] [10:48:23.048] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+11월 02, 2022 10:48:23.04 [4884:15328:1102/104823.049:ERROR:device_event_log_impl.cc(214)] [10:48:23.049] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+11월 02, 2022 10:49:21.01 [4884:9068:1102/104921.019:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+11월 02, 2022 12:06:12.54 [12628:8772:1102/120612.545:ERROR:device_event_log_impl.cc(214)] [12:06:12.545] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 吏�� 뺣맂 �뙆�씪�쓣 李얠쓣 �닔 �뾾�뒿�땲�떎. (0x2)
+11월 02, 2022 12:06:12.55 [12628:8772:1102/120612.551:ERROR:device_event_log_impl.cc(214)] [12:06:12.551] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+11월 02, 2022 12:06:12.56 [12628:8772:1102/120612.562:ERROR:device_event_log_impl.cc(214)] [12:06:12.561] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+11월 02, 2022 12:06:12.56 [12628:8772:1102/120612.562:ERROR:device_event_log_impl.cc(214)] [12:06:12.562] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+11월 02, 2022 12:06:22.21 [13748:16272:1102/120622.210:ERROR:device_event_log_impl.cc(214)] [12:06:22.209] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 吏�� 뺣맂 �뙆�씪�쓣 李얠쓣 �닔 �뾾�뒿�땲�떎. (0x2)
+11월 02, 2022 12:06:22.21 [13748:16272:1102/120622.217:ERROR:device_event_log_impl.cc(214)] [12:06:22.216] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+11월 02, 2022 12:06:22.22 [13748:16272:1102/120622.227:ERROR:device_event_log_impl.cc(214)] [12:06:22.226] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+11월 02, 2022 12:06:22.22 [13748:16272:1102/120622.227:ERROR:device_event_log_impl.cc(214)] [12:06:22.227] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: �떆�뒪� 쒖뿉 遺�李⑸맂 �옣移섍� �옉�룞�븯吏� �븡�뒿�땲�떎. (0x1F)
+11월 02, 2022 12:07:20.21 [13748:5036:1102/120720.210:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+11월 02, 2022 12:28:54.37 [13748:16272:1102/122854.370:ERROR:interface_endpoint_client.cc(689)] Message 0 rejected by interface blink.mojom.WidgetHost
+11월 02, 2022 16:53:55.19 [13748:16272:1102/165355.195:ERROR:interface_endpoint_client.cc(689)] Message 0 rejected by interface blink.mojom.WidgetHost
+11월 02, 2022 17:07:20.21 [13748:6024:1102/170720.212:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+11월 02, 2022 18:04:50.51 [13748:16272:1102/180450.511:ERROR:device_event_log_impl.cc(214)] [18:04:50.511] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: �슂�냼媛� �뾾�뒿�땲�떎. (0x490)
+11월 02, 2022 22:07:21.78 [13748:15404:1102/220721.784:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater

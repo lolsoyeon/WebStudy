@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQTest07.html</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+// 	$(document).ready();
+	$(function()
+	{
+// 		alert("확인~!!");
+		var c = document.getElementById("allCheck");
+		
+		// alert(c); //[object HTMLInputElement]
+// 		var input = $("form input:checkbox");
+// 		alert(input);
+
+		$("#allCheck").click(function()
+		{
+// 			alert("check~!!");
+// 			alert( $(this).attr("checked") );	
+			//--==>> undefined
+// 			alert( $(this).prop("checked") );		//-- 속성 → true/ false
+			//-- 선택자로서의 this
+// 			alert( this.checked );					//-- 속성 → true/ false
+			//-- allcheck로서의 this
+// 			alert( $(this).is(":checked") );		//-- 속성 → true/ false
+			//				-----------------
+			//				속성의 이름이 아니라 속성값
+/*
+			if ( $(this).is(":checked") )
+			{
+// 				alert( $("[input]").prop("checked") );
+				alert( $(":input").prop("checked") );
+			
+		
+			}
+*/
+// 			$("div > input").prop("checked", "checked");
+// 			$("div > input").prop("checked", true);
+// 			$("div > input").prop("checked", false);
+
+			// 방법 1.
+			$("div#checkbox > input:checkbox").prop("checked", this.checked);
+			// allCheck 의 속성에 따르겠다.
+
+			// 방법 2.
+			// 『$(선택자).children()』 선택자의 자식들		
+			$("div").children().prop("checked", this.checked);
+			
+			
+			
+			
+		});
+		
+/*
+		$("#allCheck").change(function()
+		{
+			alert("dsd");
+		});
+		
+*/
+	});
+	
+</script>
+
+</head>
+<body>
+
+<label>
+	<input type="checkbox" id="allCheck">모두선택
+</label>
+<br><br>
+
+<div>
+	<input type="checkbox" id="check1">
+	<label for="check1">바나나</label><br>
+	<input type="checkbox" id="check2">
+	<label for="check2">딸기</label><br>
+	<input type="checkbox" id="check3">
+	<label for="check3">수박</label><br>
+	<input type="checkbox" id="check4">
+	<label for="check4">포도</label><br>
+	<input type="checkbox" id="check5">
+	<label for="check5">키위</label><br>
+</div>
+
+</body>
+</html>

@@ -52,7 +52,7 @@
 	   
 	2. CDN(Content Delivary Network)을 통해 사용하는 방법
 	※ CDN : 웹 페이지를 실행 할 때 마다 공개 서버에서 네트워크를 통해
-	         jQuery의 필요한 자원을 다운로드 받을수 있도록 해주는 개념.
+	         jQuery의 필요한 자원을 다운로드 받을 수 있도록 해주는 개념.
 	
 	별도의 파일을 다운로드 받을 필요 없이
 	『<script type="text/jacascript" 

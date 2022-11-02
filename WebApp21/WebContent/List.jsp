@@ -123,7 +123,7 @@
 		// str = str.trim();
 		
 		if (searchKey != null)
-			f.searchKey.focues();
+			f.searchKey.focus();
 		
 		
 		f.action = "<%=cp %>/List.jsp";
@@ -139,17 +139,17 @@
 		
 		var f = document.searchForm;
 
-		f.searchkey.value = searchKey;
-		
+		f.searchKey.value = searchKey;
+		// f.searchValue = searchValue;
 	}
 </script>
 
 
 
 </head>
-<body>
+<body onload="formSet()">
 
-<div id="bbsList" onload="formSet()">
+<div id="bbsList">
 
 	<div id="bbsList_title">
 		게 시 판 (JDBC 연동 버전)

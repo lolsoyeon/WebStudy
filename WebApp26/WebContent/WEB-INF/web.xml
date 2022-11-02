@@ -26,16 +26,17 @@
 
 
 	<!-- MVCTest01 서블릿 등록 매핑 -->
+	
 	<servlet>
 		<servlet-name>MVCTest01</servlet-name>
-		<servlet-class>com.test.svt.MVCTest01</servlet-class>
+		<servlet-class>com.test.svt.MVCTest01</servlet-class>	
 	</servlet>
-
-
+	
 	<servlet-mapping>
 		<servlet-name>MVCTest01</servlet-name>
 		<url-pattern>/mvctest1</url-pattern>
 	</servlet-mapping>
+	
 
 	<!-- MVCTest02 서블릿 등록 매핑 -->
 
@@ -49,6 +50,8 @@
 		<servlet-name>MVCTest02</servlet-name>
 		<url-pattern>/mvctest2</url-pattern>
 	</servlet-mapping>
+
+
 
 
 </web-app>

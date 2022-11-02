@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQTest02.html</title>
+<style type="text/css">
+
+	.item
+	{
+		border: 2px solid red;
+		color: white;
+		background: black;
+	}
+</style>
+
+
+<script type="text/javascript"src="js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+
+	/*
+	function test()
+	{
+		alert("함수호출확인");
+	}
+	*/
+	
+	// $();
+	// jquery(document).ready();
+	// jquery();
+	// $();
+	// $(document).ready();
+
+	$(document).ready(function()
+	{
+		// 테스트
+		// alert("함수 호출 확인~!!!");
+		
+		// ※ 우리가...또는 사용자가
+		//    뭔가 건드리지 않아도..
+		// 	  (즉, 특별한 이벤트를 발생시키지 않아도...)
+		// 	  자동으로 처리(수행)될 수 있는 영역이다.
+	
+		
+		//『선택자』.click()
+		
+		// $("h1").click(기능동작행위);
+		
+		/*
+		//	복습할 부분 하고 이 구문 지우기~! 1번
+		$("h1").click(function()
+		{
+// 			alert("클릭되었네요~!!!");
+// 			alert($(this).html());
+// 			alert("엄소연");
+// 			$(this).html("이렇게하면 어떻게 될까?");
+// 			$(this).html("★");
+// 			$(this).html($(this).html() + "★");
+			$(this).html($(this).html() + "★");
+			
+		});
+		*/
+		
+		// 『선택자』.on() : 이벤트 처리
+		
+// 		$("h1").on(기능종류, 기능동작행위);
+		
+		/*
+		$("h1").on("click", function()
+		{
+// 			alert("클릭 이벤트 발생~!!!");
+			alert($(this).html());  
+			//- 내가 클릭한 h1--엄소연 뜸
+			
+			$(this).html(function(index, html)
+			{
+				// alert(index);
+				// alert(html);
+				return html + "★";
+			});
+			
+		});
+		*/
+		
+		/*
+		// $("h1").on({});  {}는 여러개의 속성값을 넘기겠다
+		$("h1").on(
+		{
+			// 속성1 mouseenter : 어찌어찌하겠다. (기능, 동작 행위) → 마우스 진입할 때
+			// 속성2 mouseleave : 저찌저찌하겠다. (기능, 동작 행위) → 마우스 떠날 때 (빠져나갈때)
+			mouseenter: function(){ $(this).addClass("item");}
+			, mouseleave: function(){ $(this).removeClass("item");}
+			
+		});
+		*/
+		
+		// 위 mouseenter, mouseleave 와 똑같음
+		/*
+		$("h1").hover(function()
+		{
+			// 상태 설정 시 적용되는 행위
+			$(this).addClass("item");
+			
+		}, function()
+		{
+			// 상태 해제 시 적용되는 행위
+			$(this).removeClass("item");
+			
+		});
+		
+		*/
+		
+		
+		
+	});	
+	
+	
+
+</script>
+
+</head>
+<body>
+
+<!-- <h1 onclick="test()">엄소연</h1> _ref 에서는... -->
+<h1>엄소연</h1>
+<h1>최나윤</h1>
+<h1>한은영</h1>
+
+
+</body>
+</html>

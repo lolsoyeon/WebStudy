@@ -17,10 +17,9 @@
 		</list>
 	</section>
 	<section name="PreferencesExportWizard">
-		<item key="" value="C:\Downlods\11_epf\WebStandard.epf"/>
+		<item key="" value="C:\Downlods\11_epf\JstlStandard.epf"/>
 		<item key="WizardPreferencesExportPage1.STORE_OVERWRITE_EXISTING_FILES_ID" value="false"/>
 		<item key="WizardPreferencesExportPage1.EXPORT_ALL_PREFERENCES_ID" value="true"/>
-		<item key="" value="C:\Downlods\11_epf\JstlStandard.epf"/>
 		<list key="WizardPreferencesExportPage1.STORE_DESTINATION_NAMES_ID">
 			<item value="C:\Downlods\11_epf\JstlStandard.epf"/>
 			<item value="C:\Downlods\11_epf\WebStandard.epf"/>
