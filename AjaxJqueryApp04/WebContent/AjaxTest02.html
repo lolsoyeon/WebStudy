@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AjaxTest02.html</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+
+	$(function()
+	{
+		$("#sendBtn").click(function()
+		{
+// 			alert("dsd");
+
+			var params = "name=" + $.trim($("#name").val()) 
+			 + "&age=" + $.trim($("#age").val())
+			 + "&habby=" + $.trim($("#habby").val());
+			
+// 			alert(params);
+			
+
+		
+			$.ajax(
+			{
+				type : "POST"
+				, url : "AjaxTest02_ok.jsp"
+				, data : params
+				, success : function(args)
+				{
+					$("#resultDiv").html(args);
+					
+					$("#name").val("");
+					$("#age").val("");
+					$("#habby").val("");
+					
+					$("#name").focus();
+					
+				}
+			
+				, beforeSend : show
+				, error : function(e)
+				{
+					alert(e.reseponseText);
+				}
+			});
+	
+			
+			function show()
+			{
+				// 여기 다시해보기
+				if (!$.trim($("#name").val()))
+				{
+					alert("이름을 입력해야 합니다.");
+					$("#name").focus();
+					return false;
+				}
+				
+				if (!$.trim($("#age").val()))
+				{
+					alert("내용을 입력해야 합니다.");
+					$("#content").focus();
+					return false;
+				}
+				if (!$.trim($("#habby").val()))
+				{
+					alert("취미를 입력해야 합니다.")
+					$("#habby").focus();
+					return false;
+				}
+				return true;
+			}
+			
+			
+			
+		});
+	});
+</script>
+
+
+</head>
+<body>
+
+<div>
+	<h1>jquery의 ajax() 메소드 실습</h1>
+	<hr />
+</div>
+
+<div>
+	이름 <input type="text" id="name" class="txt" />
+	<br><br>
+	
+	나이 <input type="text" id="age" class="txt" />
+	<br><br>
+	
+	취미 <input type="text" id="habby" class="txt" />
+	<br><br>
+	
+	<button type="button" class="btn" id="sendBtn">등록하기</button>
+	
+</div>
+<br><br>
+
+<div id="resultDiv">
+	한은영님, 나이는 13세이며, 취미는 등산입니다. 
+</div>
+
+</body>
+</html>

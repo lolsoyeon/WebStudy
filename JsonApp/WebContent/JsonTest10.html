@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JsonTest10.html</title>
+<style type="text/css">
+	body
+	{
+		background-color: #1d2d3d;
+	}
+</style>
+
+
+<script type="text/javascript">
+
+	// 매개변수로 넘겨받은 내용을 경고창으로 출력하는 함수 정의
+	function printString(cnt)
+	{
+		alert(cnt);
+	}
+	
+	// 페이지를 실행하면~
+	window.onload = function()
+	{
+		var temp = "printString('First')";
+		
+		/* JSON 기반의 객체 */
+		
+		var printList = 
+		{
+				
+				// printString은 alert을 포함하고 있다~!
+				"1" : "printString('Hi JSON~!!!')"
+				, "2" : temp
+				, "3" : "alert('Second')"
+				, "4" : "printString('Third')"
+		}
+		for (var i=1; i < 5; i++)	// 1 2 3 4 
+		{
+			// 수행시켜주는게 eval()함수
+			// check~!!!
+			eval(printList[i]);
+		}
+		
+	}
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,3 +1,5 @@
 AJAX is not a programming language.
 
-AJAX is a technique for accessing web server from a web page.
+AJAX is a technique for accessing web server form a web page.
+
+

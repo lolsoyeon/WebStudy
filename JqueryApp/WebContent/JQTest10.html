@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQTest10.html</title>
+
+<style type="text/css">
+
+	body, div, span, table, th, td
+	{
+		font-size: 12px;
+	}	
+	#list
+	{
+		border: 1px solid gray;
+		border-collapse: collapse;
+		width: 800px;
+	}
+	#list th
+	{
+		width: 152px;
+	}
+	#list td 
+	{
+		width: 162px;
+}
+	#list th, #list td
+	{
+		border: 1px solid gray;
+		padding: 3px;
+	}
+
+</style>
+<script type="text/javascript">
+	
+	function add()
+	{
+// 		alert("함수 호출 확인~!!");
+
+		var item = document.getElementById("item").value;	// 제목(문자열)
+		
+		var week = parseInt(document.getElementById("week").value);	// 요일(0 ~ 3)
+		
+		var start = parseInt(document.getElementById("start").value);	// 시작시간(1 ~ 8)
+		
+		var end = parseInt(document.getElementById("end").value);		// 종료 시간(1 ~ 8)
+		
+		var color = document.getElementById("color").value;		// 색상(문자열)
+
+		var tds = document.getElementsByTagName("td");			// ※ 모든 td 태그들
+		// td 들의 (배열을 붙잡아온다)
+		
+		// 확인
+// 		alert(tds.length);
+		//--==>> 32 
+		
+		// 확인
+		//tds[1].style.backgroundColor = "red";
+		//tds[1].innerText = "1번째 td";
+		
+		// 확인
+		/*
+		for (var i=0; i<tds.length; i++)
+		{
+			tds[i].style.backgroundColor = color;
+			tds[i].innerText =  i + "번째 td";
+		}
+		// 4씩 증가한다는 것을 알아냄
+		*/
+		
+		// 확인
+		/*
+		for (var i=0; i<tds.length; i+=4)
+		{
+			tds[i].style.backgroundColor = color;
+			tds[i].innerText =  i + "번째 td";
+		}
+		*/
+		// 확인
+		/*
+		
+// 		for (var i=1; i<tds.length; i+=4)
+// 		for (var i=2; i<tds.length; i+=4)
+		for (var i=3; i<tds.length; i+=4)
+		{
+			tds[i].style.backgroundColor = color;
+			tds[i].innerText =  i + "번째 td";
+		}
+		
+		*/
+		
+		// 0 1 2 3
+		/*
+		for (var i=week; i<tds.length; i+=4)
+		{
+			tds[i].style.backgroundColor = color;
+			tds[i].innerText =  i + "번째 td";
+		}
+		*/
+		
+		// 비슷한 문제 많이 접해야(경험) 수리적으로 패턴 분석이 가능하다.
+		//        week  start       tds[i]
+		//          0     1   0      [0]
+		//          0     2   1      [4]
+		//          0     3   2      [8]
+		//          0     4   3     [12]
+		
+		//          1     1   0      [1]
+		//          1     2   1      [5]
+		
+		//          2     1    0      [2]
+		//          2     2    1*4+2  [6] 
+		
+		
+		//       week  end     		tds[i]
+		// 			0    2 *4-4      [4]
+		//          0    3 *4-4        [8]
+		
+		
+		//          1    3   *4-3     [9]
+		//          1    4   *4-3     [13]
+		//          1    5   *4-3    [17]
+		
+		//          2     2    *4-2      [6]
+		//          2     3    *4-2		[10]
+		
+		
+		//          3     5  *4-1      [19]
+		//          3     6  *4-1      [23]
+		
+		// 내가 찾은 패턴(end*4)-(4-week) 
+		
+		
+		// 테스트
+		/*
+// 		for (var i=(week+(start-1)*4); i<tds.length; i+=4)
+		{
+			tds[i].style.backgroundColor = color;
+			tds[i].innerText =  i + "번째 td";
+		}
+		*/
+		
+		
+		/*
+		for (var i=(week+(start-1)*4); i<=(week+(end-1)*4); i+=4)
+// 		for (var i=(week+(start-1)*4); i<week+(end*4); i+=4)
+// 		for (var i=(week+(start-1)*4); i<(end*4)-(4-week); i+=4)
+		{
+			tds[i].style.backgroundColor = color;
+			tds[i].innerText =  i + "번째 td";
+		}
+		*/
+		
+		for (var i=(week+(start-1)*4); i<(end*4)-(4-week); i+=4)
+		{
+			tds[i].style.backgroundColor = color;
+			tds[i].innerText = item;
+		}
+		
+		
+		document.getElementById("item").value = "";
+		document.getElementById("item").focus();
+		
+		
+	}
+
+</script>
+
+</head>
+<body>
+
+<h1>일정 관리</h1>
+<hr />
+
+<table id="list">
+	<tr>
+		<th></th>
+		<th>월</th>
+		<th>화</th>
+		<th>수</th>
+		<th>목</th>
+	</tr>
+	<tr>
+		<th>11:00</th>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<th>12:00</th>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<th>13:00</th>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<th>14:00</th>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<th>15:00</th>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<th>16:00</th>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<th>17:00</th>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<th>18:00</th>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+
+<div style="margin-top: 20px;">
+	<label for="item">제목</label> 	
+	<input type="text" id="item">
+	<br>
+</div>
+	<label for="week">요일</label>
+	<select id="week">
+		<option value="0">월요일</option>
+		<option value="1">화요일</option>
+		<option value="2">수요일</option>
+		<option value="3">목요일</option>
+	</select>
+	<br>
+	
+	<label for="start">시간</label>
+	<select id="start">
+		<option value="1">11:00</option>
+		<option value="2">12:00</option>
+		<option value="3">13:00</option>
+		<option value="4">14:00</option>
+		<option value="5">15:00</option>
+		<option value="6">16:00</option>
+		<option value="7">17:00</option>
+		<option value="8">18:00</option>
+	</select>
+	~ 
+	<select id="end">
+		<option value="1">11:00</option>
+		<option value="2">12:00</option>
+		<option value="3">13:00</option>
+		<option value="4">14:00</option>
+		<option value="5">15:00</option>
+		<option value="6">16:00</option>
+		<option value="7">17:00</option>
+		<option value="8">18:00</option>
+	</select>
+	<br>
+	
+	<label for="color">색상</label>
+	<select id="color">
+		<option value="#ff3300">빨강</option>
+		<option value="#7799ff">파랑</option>
+		<option value="#ffff33">노랑</option>
+		<option value="#808080">검정</option>
+	</select>
+	<br><br>
+	
+	<input type="button" value="일정 추가하기" style="margin-top: 20px;" onclick="add()">
+
+</body>
+</html>

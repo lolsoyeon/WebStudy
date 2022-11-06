@@ -11,6 +11,11 @@
 <title>AjaxTest05.jsp</title>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <style type="text/css">
+	.doNot
+	{
+		background-color: #d5d5d5;
+	}
+
 	#result
 	{
 		display: inline-block;
@@ -106,9 +111,10 @@
 				callBack2();
 			}
 		}
-		
+		// 실제로 내용을 보냄
 		ajax.send("");
 	}
+	
 	// 추출한 업무
 	//-- 우편번호 검색 결과를 통보 받아서 사용자에게 안내해줄 수 있도록 처리
 	function callBack2()
@@ -125,7 +131,7 @@
 		// root(즉, <list> 엘리먼트) 하위의
 		// 모든 <item> 엘리먼트들을 받아내기 (반환받기)
 		var itemList = root.getElementsByTagName("item");
-		
+
 		// check~!!!!
 		// select box 초기화 신경써야한다
 		document.getElementById("addrResult").innerHTML = "";
@@ -147,23 +153,44 @@
 		{
 			// 해당 엘리먼트를 얻어내는 코드
 			var zipcode = itemList[i].getElementsByTagName("zipcode")[0];
-				// <zipcode>"04044"</zipcode>
 			var address = itemList[i].getElementsByTagName("address")[0];
-
+			
 			// ※ 해당 태그가 가지는 텍스트는
 			//    태그의 첫 번째 자식이고...
 			//    텍스트 노드의 값은
 			//    nodeValue 로 가져온다.
 			var zipcodeText = zipcode.firstChild.nodeValue;
 			var addressText = address.firstChild.nodeValue;
-			
-			
+
+		
 			// select box 에 아이템 추가 추가 추가...
 			document.getElementById("addrResult").innerHTML
 			+= "<option value='" + zipcodeText + "/" + addressText
 			+ "'>[" + zipcodeText +"]" + addressText + "</option>";
 			
+			
+			
 		}
+		
+// 			document.getElementById("addr1").value = zipcodeText;
+// 			document.getElementById("addr2").value = addressText;
+			
+	}
+	
+	function selZipCode(obj)
+	{
+		// 확인
+// 		alert(obj.value);
+		//--==>> 04044/서울특별시 마포구 독막로3길 13 (서교동)
+		
+// 		alert(obj.value.split("/"));
+		
+		document.getElementById("addr1").value = obj.value.split("/")[0];
+		document.getElementById("addr2").value = obj.value.split("/")[1];
+		
+		
+		// check~!!!!
+		document.getElementById("addr3").focus();
 		
 	}
 	
@@ -206,7 +233,7 @@
 			<input type="text" id="addr" class="control txt" placeholder="동 입력">
 			<input type="button" value="검색하기" class="control btn" onclick="search()">
 			<br>
-			<select id="addrResult" class="control">
+			<select id="addrResult" class="control" onchange="selZipCode(this)">
 				<option>주소를 입력하세요</option>
 			</select>
 			

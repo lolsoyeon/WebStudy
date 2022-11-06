@@ -82,7 +82,7 @@ public class Test05 extends HttpServlet
 		RequestDispatcher dispatcher = request.getRequestDispatcher("Test05Ok.jsp");
 		dispatcher.forward(request, response);
 	}
-
+// 서블릿이자 컨트롤러
 }
 
 
