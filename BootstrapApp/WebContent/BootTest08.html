@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BootTest08.html</title>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+
+<!-- 추가 -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+</head>
+<body>
+
+<div>
+	<h1>Glyphicons</h1>
+	<hr />
+</div>
+
+<div>
+	아이콘 : <span class="glyphicon glyphicon-cloud"></span>
+</div>
+
+<div>
+<!-- Glyphicons 는 폰트이다!    -->
+<!-- 	아이콘 : <span style="size: 100px;" class="glyphicon glyphicon-send"></span> -->
+	아이콘 : <span style="font-size: 30px; color: red;" class="glyphicon glyphicon-send"></span>
+</div>
+
+<div>
+<!-- Attribute Content Type → Simple Type → 적용 안됨 -->
+	<input type="button" class="glyphicon glyphicon-bookmark" value="" />
+</div>
+
+<br><br>
+
+<div>
+	<button type="button" class="btn btn-default">
+		<span class="glyphicon glyphicon-print"></span>
+		인쇄하기
+	</button>
+</div>
+<br><br>
+
+<div>
+	<button type="button" class="btn btn-default">Left</button>
+	<button type="button" class="btn btn-default">Middle</button>
+	<button type="button" class="btn btn-default">Right</button>
+</div>
+
+<br><br>
+
+<div class="btn-group" role="group"> 
+	<button type="button" class="btn btn-default">Left</button>
+	<button type="button" class="btn btn-default">Middle</button>
+	<button type="button" class="btn btn-default">Right</button>
+</div>
+
+<br><br>
+
+<div class="btn-group" role="group"> 
+	<button type="button" class="btn btn-default">
+		<span class="glyphicon glyphicon-align-left"></span>
+		Left</button>
+	<button type="button" class="btn btn-default">
+		<span class="glyphicon glyphicon-align-center"></span>
+		Middle
+	</button>
+	<button type="button" class="btn btn-default">
+	<span class="glyphicon glyphicon-align-right"></span>
+		Right
+	</button>
+</div>
+
+</body>
+</html>

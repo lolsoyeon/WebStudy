@@ -33,10 +33,10 @@
 				{
 					var out = "";
 					
-					//복습부분 
+					//복습 부분 
 					for (var idx = 0; idx < args.length; idx++)
 					{
-						var num = args[idx].n;
+						var num = args[idx].num;
 						var name = args[idx].name;
 						var content = args[idx].content;
 						
@@ -45,7 +45,6 @@
 						out += "<br>이름 : " + name;
 						out += "<br>내용 : " + content;
 						out += "<br>================"
-						// 여기 번호 안받아짐~!!!!
 					}
 					
 					
