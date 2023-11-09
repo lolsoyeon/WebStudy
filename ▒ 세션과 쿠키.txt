@@ -68,7 +68,7 @@
       ① Cookie 객체 생성
          Cookie c = new Cookie("쿠키이름", "쿠키값");
       ② Cookie 객체 설정
-         c.setMaxAge(쿠키 유효시단 초 단위 설정);
+         c.setMaxAge(쿠키 유효시간 초 단위 설정);
       ③ Cookie 객체 등록(추가)   (쿠키 상자에 내가 만든 쿠키도 넣는다.)
          response.addCookie(c);
 
